@@ -1,0 +1,2613 @@
+Loading plugins phase: Elapsed time ==> 0s.822ms
+<CYPRESSTAG name="CyDsfit arguments...">
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\214016586\Documents\GitHub\PSoC_TIA\TIA\TIA.cydsn\TIA.cyprj -d CY8C4245AXI-483 -s C:\Users\214016586\Documents\GitHub\PSoC_TIA\TIA\TIA.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE</CYPRESSTAG>
+<CYPRESSTAG name="Design elaboration results...">
+ADD: sdb.M0061: information: Info from component: ADC_SAR_Seq_1. The actual sample rate (55555 SPS) differs from the desired sample rate (60000 SPS) due to the clock configuration in the DWR.
+ * C:\Users\214016586\Documents\GitHub\PSoC_TIA\TIA\TIA.cydsn\TopDesign\TopDesign.cysch (Instance:ADC_SAR_Seq_1)
+
+</CYPRESSTAG>
+Elaboration phase: Elapsed time ==> 1s.470ms
+<CYPRESSTAG name="HDL generation results...">
+</CYPRESSTAG>
+HDL generation phase: Elapsed time ==> 0s.057ms
+<CYPRESSTAG name="Synthesis results...">
+
+     | | | | | | |
+   _________________
+  -|               |-
+  -|               |-
+  -|               |-
+  -|    CYPRESS    |-
+  -|               |-
+  -|               |-   Warp Verilog Synthesis Compiler: Version 6.3 IR 41
+  -|               |-   Copyright (C) 1991-2001 Cypress Semiconductor
+   |_______________|
+     | | | | | | |
+
+======================================================================
+Compiling:  TIA.v
+Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\bin\warp.exe
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\214016586\Documents\GitHub\PSoC_TIA\TIA\TIA.cydsn\TIA.cyprj -dcpsoc3 TIA.v -verilog
+======================================================================
+
+======================================================================
+Compiling:  TIA.v
+Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\bin\warp.exe
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\214016586\Documents\GitHub\PSoC_TIA\TIA\TIA.cydsn\TIA.cyprj -dcpsoc3 TIA.v -verilog
+======================================================================
+
+======================================================================
+Compiling:  TIA.v
+Program  :   vlogfe
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\214016586\Documents\GitHub\PSoC_TIA\TIA\TIA.cydsn\TIA.cyprj -dcpsoc3 -verilog TIA.v
+======================================================================
+
+vlogfe V6.3 IR 41:  Verilog parser
+Tue Jul 25 09:58:54 2017
+
+
+======================================================================
+Compiling:  TIA.v
+Program  :   vpp
+Options  :    -yv2 -q10 TIA.v
+======================================================================
+
+vpp V6.3 IR 41:  Verilog Pre-Processor
+Tue Jul 25 09:58:54 2017
+
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Bus_Connect_v2_40\Bus_Connect_v2_40.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
+Flattening file 'C:\Users\214016586\Documents\GitHub\PSoC_TIA\TIA\TIA.cydsn\TIA\TIA.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\OneTerminal\OneTerminal.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.v'
+
+vpp:  No errors.
+
+Library 'work' => directory 'lcpsoc3'
+General_symbol_table
+General_symbol_table
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\std.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\work\cypress.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
+Using control file 'TIA.ctl'.
+C:\Users\214016586\Documents\GitHub\PSoC_TIA\TIA\TIA.cydsn\TIA\TIA.v (line 46, col 36):  Note: Substituting module 'cmp_vv_vv' for '='.
+C:\Users\214016586\Documents\GitHub\PSoC_TIA\TIA\TIA.cydsn\TIA\TIA.v (line 50, col 38):  Note: Substituting module 'add_vi_vv' for '+'.
+C:\Users\214016586\Documents\GitHub\PSoC_TIA\TIA\TIA.cydsn\TIA\TIA.v (line 80, col 36):  Note: Substituting module 'cmp_vv_vv' for '='.
+C:\Users\214016586\Documents\GitHub\PSoC_TIA\TIA\TIA.cydsn\TIA\TIA.v (line 83, col 28):  Note: Substituting module 'cmp_vv_vv' for '='.
+
+vlogfe:  No errors.
+
+
+======================================================================
+Compiling:  TIA.v
+Program  :   tovif
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\214016586\Documents\GitHub\PSoC_TIA\TIA\TIA.cydsn\TIA.cyprj -dcpsoc3 -verilog TIA.v
+======================================================================
+
+tovif V6.3 IR 41:  High-level synthesis
+Tue Jul 25 09:58:54 2017
+
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\std.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\work\cypress.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
+Linking 'C:\Users\214016586\Documents\GitHub\PSoC_TIA\TIA\TIA.cydsn\codegentemp\TIA.ctl'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
+Linking 'C:\Users\214016586\Documents\GitHub\PSoC_TIA\TIA\TIA.cydsn\codegentemp\TIA.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Bus_Connect_v2_40\Bus_Connect_v2_40.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
+Linking 'C:\Users\214016586\Documents\GitHub\PSoC_TIA\TIA\TIA.cydsn\TIA\TIA.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\OneTerminal\OneTerminal.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mcompare.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\lcpsoc3\stdlogic\mod_cnst.vif'.
+
+tovif:  No errors.
+
+
+======================================================================
+Compiling:  TIA.v
+Program  :   topld
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\214016586\Documents\GitHub\PSoC_TIA\TIA\TIA.cydsn\TIA.cyprj -dcpsoc3 -verilog TIA.v
+======================================================================
+
+topld V6.3 IR 41:  Synthesis and optimization
+Tue Jul 25 09:58:55 2017
+
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\std.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.vhd'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\work\cypress.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
+Linking 'C:\Users\214016586\Documents\GitHub\PSoC_TIA\TIA\TIA.cydsn\codegentemp\TIA.ctl'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
+Linking 'C:\Users\214016586\Documents\GitHub\PSoC_TIA\TIA\TIA.cydsn\codegentemp\TIA.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Bus_Connect_v2_40\Bus_Connect_v2_40.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cypress.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
+Linking 'C:\Users\214016586\Documents\GitHub\PSoC_TIA\TIA\TIA.cydsn\TIA\TIA.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\OneTerminal\OneTerminal.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\mcompare.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\lcpsoc3\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\lcpsoc3\stdlogic\cpsoc3.vif'.
+
+----------------------------------------------------------
+Detecting unused logic.
+----------------------------------------------------------
+    User names
+	\ADC_SAR_Seq_1:Net_3125\
+	\ADC_SAR_Seq_1:Net_3126\
+	\TIA_1:MODULE_1:g1:a0:gx:u0:albi_2\
+	\TIA_1:MODULE_1:g1:a0:gx:u0:agbi_2\
+	\TIA_1:MODULE_1:g1:a0:gx:u0:lt_3\
+	\TIA_1:MODULE_1:g1:a0:gx:u0:gt_3\
+	\TIA_1:MODULE_1:g1:a0:gx:u0:lt_4\
+	\TIA_1:MODULE_1:g1:a0:gx:u0:gt_4\
+	\TIA_1:MODULE_1:g1:a0:gx:u0:lti_1\
+	\TIA_1:MODULE_1:g1:a0:gx:u0:gti_1\
+	\TIA_1:MODULE_1:g1:a0:gx:u0:albi_1\
+	\TIA_1:MODULE_1:g1:a0:gx:u0:agbi_1\
+	\TIA_1:MODULE_1:g1:a0:gx:u0:albi_0\
+	\TIA_1:MODULE_1:g1:a0:gx:u0:agbi_0\
+	\TIA_1:MODULE_1:g1:a0:xneq\
+	\TIA_1:MODULE_1:g1:a0:xlt\
+	\TIA_1:MODULE_1:g1:a0:xlte\
+	\TIA_1:MODULE_1:g1:a0:xgt\
+	\TIA_1:MODULE_1:g1:a0:xgte\
+	\TIA_1:MODULE_1:lt\
+	\TIA_1:MODULE_1:gt\
+	\TIA_1:MODULE_1:gte\
+	\TIA_1:MODULE_1:lte\
+	\TIA_1:MODULE_1:neq\
+	\TIA_1:MODULE_2:b_31\
+	\TIA_1:MODULE_2:b_30\
+	\TIA_1:MODULE_2:b_29\
+	\TIA_1:MODULE_2:b_28\
+	\TIA_1:MODULE_2:b_27\
+	\TIA_1:MODULE_2:b_26\
+	\TIA_1:MODULE_2:b_25\
+	\TIA_1:MODULE_2:b_24\
+	\TIA_1:MODULE_2:b_23\
+	\TIA_1:MODULE_2:b_22\
+	\TIA_1:MODULE_2:b_21\
+	\TIA_1:MODULE_2:b_20\
+	\TIA_1:MODULE_2:b_19\
+	\TIA_1:MODULE_2:b_18\
+	\TIA_1:MODULE_2:b_17\
+	\TIA_1:MODULE_2:b_16\
+	\TIA_1:MODULE_2:b_15\
+	\TIA_1:MODULE_2:b_14\
+	\TIA_1:MODULE_2:b_13\
+	\TIA_1:MODULE_2:b_12\
+	\TIA_1:MODULE_2:b_11\
+	\TIA_1:MODULE_2:b_10\
+	\TIA_1:MODULE_2:b_9\
+	\TIA_1:MODULE_2:b_8\
+	\TIA_1:MODULE_2:b_7\
+	\TIA_1:MODULE_2:b_6\
+	\TIA_1:MODULE_2:b_5\
+	\TIA_1:MODULE_2:b_4\
+	\TIA_1:MODULE_2:b_3\
+	\TIA_1:MODULE_2:b_2\
+	\TIA_1:MODULE_2:b_1\
+	\TIA_1:MODULE_2:b_0\
+	\TIA_1:MODULE_2:g2:a0:a_31\
+	\TIA_1:MODULE_2:g2:a0:a_30\
+	\TIA_1:MODULE_2:g2:a0:a_29\
+	\TIA_1:MODULE_2:g2:a0:a_28\
+	\TIA_1:MODULE_2:g2:a0:a_27\
+	\TIA_1:MODULE_2:g2:a0:a_26\
+	\TIA_1:MODULE_2:g2:a0:a_25\
+	\TIA_1:MODULE_2:g2:a0:a_24\
+	\TIA_1:MODULE_2:g2:a0:b_31\
+	\TIA_1:MODULE_2:g2:a0:b_30\
+	\TIA_1:MODULE_2:g2:a0:b_29\
+	\TIA_1:MODULE_2:g2:a0:b_28\
+	\TIA_1:MODULE_2:g2:a0:b_27\
+	\TIA_1:MODULE_2:g2:a0:b_26\
+	\TIA_1:MODULE_2:g2:a0:b_25\
+	\TIA_1:MODULE_2:g2:a0:b_24\
+	\TIA_1:MODULE_2:g2:a0:b_23\
+	\TIA_1:MODULE_2:g2:a0:b_22\
+	\TIA_1:MODULE_2:g2:a0:b_21\
+	\TIA_1:MODULE_2:g2:a0:b_20\
+	\TIA_1:MODULE_2:g2:a0:b_19\
+	\TIA_1:MODULE_2:g2:a0:b_18\
+	\TIA_1:MODULE_2:g2:a0:b_17\
+	\TIA_1:MODULE_2:g2:a0:b_16\
+	\TIA_1:MODULE_2:g2:a0:b_15\
+	\TIA_1:MODULE_2:g2:a0:b_14\
+	\TIA_1:MODULE_2:g2:a0:b_13\
+	\TIA_1:MODULE_2:g2:a0:b_12\
+	\TIA_1:MODULE_2:g2:a0:b_11\
+	\TIA_1:MODULE_2:g2:a0:b_10\
+	\TIA_1:MODULE_2:g2:a0:b_9\
+	\TIA_1:MODULE_2:g2:a0:b_8\
+	\TIA_1:MODULE_2:g2:a0:b_7\
+	\TIA_1:MODULE_2:g2:a0:b_6\
+	\TIA_1:MODULE_2:g2:a0:b_5\
+	\TIA_1:MODULE_2:g2:a0:b_4\
+	\TIA_1:MODULE_2:g2:a0:b_3\
+	\TIA_1:MODULE_2:g2:a0:b_2\
+	\TIA_1:MODULE_2:g2:a0:b_1\
+	\TIA_1:MODULE_2:g2:a0:b_0\
+	\TIA_1:MODULE_2:g2:a0:s_31\
+	\TIA_1:MODULE_2:g2:a0:s_30\
+	\TIA_1:MODULE_2:g2:a0:s_29\
+	\TIA_1:MODULE_2:g2:a0:s_28\
+	\TIA_1:MODULE_2:g2:a0:s_27\
+	\TIA_1:MODULE_2:g2:a0:s_26\
+	\TIA_1:MODULE_2:g2:a0:s_25\
+	\TIA_1:MODULE_2:g2:a0:s_24\
+	\TIA_1:MODULE_2:g2:a0:s_23\
+	\TIA_1:MODULE_2:g2:a0:s_22\
+	\TIA_1:MODULE_2:g2:a0:s_21\
+	\TIA_1:MODULE_2:g2:a0:s_20\
+	\TIA_1:MODULE_2:g2:a0:s_19\
+	\TIA_1:MODULE_2:g2:a0:s_18\
+	\TIA_1:MODULE_2:g2:a0:s_17\
+	\TIA_1:MODULE_2:g2:a0:s_16\
+	\TIA_1:MODULE_2:g2:a0:s_15\
+	\TIA_1:MODULE_2:g2:a0:s_14\
+	\TIA_1:MODULE_2:g2:a0:s_13\
+	\TIA_1:MODULE_2:g2:a0:s_12\
+	\TIA_1:MODULE_2:g2:a0:s_11\
+	\TIA_1:MODULE_2:g2:a0:s_10\
+	\TIA_1:MODULE_2:g2:a0:s_9\
+	\TIA_1:MODULE_2:g2:a0:s_8\
+	\TIA_1:MODULE_2:g2:a0:s_7\
+	\TIA_1:MODULE_2:g2:a0:s_6\
+	\TIA_1:MODULE_2:g2:a0:s_5\
+	\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_31\
+	\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_30\
+	\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_29\
+	\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_28\
+	\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_27\
+	\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_26\
+	\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_25\
+	\AUDF:control_bus_7\
+	\AUDF:control_bus_6\
+	\AUDF:control_bus_5\
+	\AUDC:control_bus_7\
+	\AUDC:control_bus_6\
+	\AUDC:control_bus_5\
+	\AUDC:control_bus_4\
+
+    Synthesized names
+	\TIA_1:add_vi_vv_MODGEN_2_31\
+	\TIA_1:add_vi_vv_MODGEN_2_30\
+	\TIA_1:add_vi_vv_MODGEN_2_29\
+	\TIA_1:add_vi_vv_MODGEN_2_28\
+	\TIA_1:add_vi_vv_MODGEN_2_27\
+	\TIA_1:add_vi_vv_MODGEN_2_26\
+	\TIA_1:add_vi_vv_MODGEN_2_25\
+	\TIA_1:add_vi_vv_MODGEN_2_24\
+	\TIA_1:add_vi_vv_MODGEN_2_23\
+	\TIA_1:add_vi_vv_MODGEN_2_22\
+	\TIA_1:add_vi_vv_MODGEN_2_21\
+	\TIA_1:add_vi_vv_MODGEN_2_20\
+	\TIA_1:add_vi_vv_MODGEN_2_19\
+	\TIA_1:add_vi_vv_MODGEN_2_18\
+	\TIA_1:add_vi_vv_MODGEN_2_17\
+	\TIA_1:add_vi_vv_MODGEN_2_16\
+	\TIA_1:add_vi_vv_MODGEN_2_15\
+	\TIA_1:add_vi_vv_MODGEN_2_14\
+	\TIA_1:add_vi_vv_MODGEN_2_13\
+	\TIA_1:add_vi_vv_MODGEN_2_12\
+	\TIA_1:add_vi_vv_MODGEN_2_11\
+	\TIA_1:add_vi_vv_MODGEN_2_10\
+	\TIA_1:add_vi_vv_MODGEN_2_9\
+	\TIA_1:add_vi_vv_MODGEN_2_8\
+	\TIA_1:add_vi_vv_MODGEN_2_7\
+	\TIA_1:add_vi_vv_MODGEN_2_6\
+	\TIA_1:add_vi_vv_MODGEN_2_5\
+
+Deleted 137 User equations/components.
+Deleted 27 Synthesized equations/components.
+
+------------------------------------------------------
+Alias Detection
+------------------------------------------------------
+Aliasing \ADC_SAR_Seq_1:Net_3106\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \ADC_SAR_Seq_1:Net_3105\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \ADC_SAR_Seq_1:Net_3104\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \ADC_SAR_Seq_1:Net_3103\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \ADC_SAR_Seq_1:Net_3207_1\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \ADC_SAR_Seq_1:Net_3207_0\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \ADC_SAR_Seq_1:Net_3235\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing zero to \ADC_SAR_Seq_1:Net_3107\
+Aliasing one to tmpOE__Pin_1_net_0
+Aliasing tmpOE__Pin_2_net_0 to tmpOE__Pin_1_net_0
+Aliasing tmpOE__Pin_3_net_0 to tmpOE__Pin_1_net_0
+Aliasing tmpOE__Pin_4_net_0 to tmpOE__Pin_1_net_0
+Aliasing Net_35 to tmpOE__Pin_1_net_0
+Aliasing \TIA_1:MODULE_1:g1:a0:gx:u0:aeqb_0\ to tmpOE__Pin_1_net_0
+Aliasing \TIA_1:MODULE_2:g2:a0:a_23\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \TIA_1:MODULE_2:g2:a0:a_22\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \TIA_1:MODULE_2:g2:a0:a_21\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \TIA_1:MODULE_2:g2:a0:a_20\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \TIA_1:MODULE_2:g2:a0:a_19\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \TIA_1:MODULE_2:g2:a0:a_18\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \TIA_1:MODULE_2:g2:a0:a_17\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \TIA_1:MODULE_2:g2:a0:a_16\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \TIA_1:MODULE_2:g2:a0:a_15\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \TIA_1:MODULE_2:g2:a0:a_14\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \TIA_1:MODULE_2:g2:a0:a_13\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \TIA_1:MODULE_2:g2:a0:a_12\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \TIA_1:MODULE_2:g2:a0:a_11\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \TIA_1:MODULE_2:g2:a0:a_10\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \TIA_1:MODULE_2:g2:a0:a_9\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \TIA_1:MODULE_2:g2:a0:a_8\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \TIA_1:MODULE_2:g2:a0:a_7\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \TIA_1:MODULE_2:g2:a0:a_6\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \TIA_1:MODULE_2:g2:a0:a_5\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \TIA_1:MODIN3_4\ to \TIA_1:MODIN1_4\
+Aliasing \TIA_1:MODIN3_3\ to \TIA_1:MODIN1_3\
+Aliasing \TIA_1:MODIN3_2\ to \TIA_1:MODIN1_2\
+Aliasing \TIA_1:MODIN3_1\ to \TIA_1:MODIN1_1\
+Aliasing \TIA_1:MODIN3_0\ to \TIA_1:MODIN1_0\
+Aliasing \TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:b_0\ to tmpOE__Pin_1_net_0
+Aliasing tmpOE__Pin_5_net_0 to tmpOE__Pin_1_net_0
+Aliasing \AUDF:clk\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \AUDF:rst\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \AUDC:clk\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing \AUDC:rst\ to \ADC_SAR_Seq_1:Net_3107\
+Aliasing tmpOE__Pin_6_net_0 to tmpOE__Pin_1_net_0
+Aliasing tmpOE__Pin_8_net_0 to tmpOE__Pin_1_net_0
+Removing Lhs of wire \ADC_SAR_Seq_1:Net_3106\[79] = \ADC_SAR_Seq_1:Net_3107\[78]
+Removing Lhs of wire \ADC_SAR_Seq_1:Net_3105\[80] = \ADC_SAR_Seq_1:Net_3107\[78]
+Removing Lhs of wire \ADC_SAR_Seq_1:Net_3104\[81] = \ADC_SAR_Seq_1:Net_3107\[78]
+Removing Lhs of wire \ADC_SAR_Seq_1:Net_3103\[82] = \ADC_SAR_Seq_1:Net_3107\[78]
+Removing Lhs of wire \ADC_SAR_Seq_1:Net_17\[131] = \ADC_SAR_Seq_1:Net_1845\[2]
+Removing Lhs of wire \ADC_SAR_Seq_1:Net_3207_1\[153] = \ADC_SAR_Seq_1:Net_3107\[78]
+Removing Lhs of wire \ADC_SAR_Seq_1:Net_3207_0\[154] = \ADC_SAR_Seq_1:Net_3107\[78]
+Removing Lhs of wire \ADC_SAR_Seq_1:Net_3235\[155] = \ADC_SAR_Seq_1:Net_3107\[78]
+Removing Rhs of wire zero[224] = \ADC_SAR_Seq_1:Net_3107\[78]
+Removing Lhs of wire one[228] = tmpOE__Pin_1_net_0[223]
+Removing Lhs of wire tmpOE__Pin_2_net_0[231] = tmpOE__Pin_1_net_0[223]
+Removing Lhs of wire tmpOE__Pin_3_net_0[237] = tmpOE__Pin_1_net_0[223]
+Removing Lhs of wire tmpOE__Pin_4_net_0[243] = tmpOE__Pin_1_net_0[223]
+Removing Lhs of wire Net_35[250] = tmpOE__Pin_1_net_0[223]
+Removing Rhs of wire \TIA_1:sr5_cnt\[257] = \TIA_1:cmp_vv_vv_MODGEN_1\[264]
+Removing Rhs of wire \TIA_1:sr5_cnt\[257] = \TIA_1:MODULE_1:g1:a0:xeq\[355]
+Removing Rhs of wire \TIA_1:sr5_cnt\[257] = \TIA_1:MODULE_1:g1:a0:gx:u0:aeqb_1\[332]
+Removing Lhs of wire \TIA_1:add_vi_vv_MODGEN_2_4\[265] = \TIA_1:MODULE_2:g2:a0:s_4\[526]
+Removing Lhs of wire \TIA_1:add_vi_vv_MODGEN_2_3\[267] = \TIA_1:MODULE_2:g2:a0:s_3\[527]
+Removing Lhs of wire \TIA_1:add_vi_vv_MODGEN_2_2\[269] = \TIA_1:MODULE_2:g2:a0:s_2\[528]
+Removing Lhs of wire \TIA_1:add_vi_vv_MODGEN_2_1\[271] = \TIA_1:MODULE_2:g2:a0:s_1\[529]
+Removing Lhs of wire \TIA_1:add_vi_vv_MODGEN_2_0\[273] = \TIA_1:MODULE_2:g2:a0:s_0\[530]
+Removing Rhs of wire Net_31_3[274] = \AUDC:control_out_3\[608]
+Removing Rhs of wire Net_31_3[274] = \AUDC:control_3\[617]
+Removing Rhs of wire Net_31_2[275] = \AUDC:control_out_2\[609]
+Removing Rhs of wire Net_31_2[275] = \AUDC:control_2\[618]
+Removing Rhs of wire Net_31_1[276] = \AUDC:control_out_1\[610]
+Removing Rhs of wire Net_31_1[276] = \AUDC:control_1\[619]
+Removing Rhs of wire Net_31_0[277] = \AUDC:control_out_0\[611]
+Removing Rhs of wire Net_31_0[277] = \AUDC:control_0\[620]
+Removing Rhs of wire Net_41[279] = \TIA_1:sr4_0\[255]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:newa_4\[280] = \TIA_1:MODIN1_4\[281]
+Removing Lhs of wire \TIA_1:MODIN1_4\[281] = \TIA_1:dvdr_4\[263]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:newa_3\[282] = \TIA_1:MODIN1_3\[283]
+Removing Lhs of wire \TIA_1:MODIN1_3\[283] = \TIA_1:dvdr_3\[266]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:newa_2\[284] = \TIA_1:MODIN1_2\[285]
+Removing Lhs of wire \TIA_1:MODIN1_2\[285] = \TIA_1:dvdr_2\[268]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:newa_1\[286] = \TIA_1:MODIN1_1\[287]
+Removing Lhs of wire \TIA_1:MODIN1_1\[287] = \TIA_1:dvdr_1\[270]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:newa_0\[288] = \TIA_1:MODIN1_0\[289]
+Removing Lhs of wire \TIA_1:MODIN1_0\[289] = \TIA_1:dvdr_0\[272]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:newb_4\[290] = \TIA_1:MODIN2_4\[291]
+Removing Lhs of wire \TIA_1:MODIN2_4\[291] = Net_32_4[366]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:newb_3\[292] = \TIA_1:MODIN2_3\[293]
+Removing Lhs of wire \TIA_1:MODIN2_3\[293] = Net_32_3[367]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:newb_2\[294] = \TIA_1:MODIN2_2\[295]
+Removing Lhs of wire \TIA_1:MODIN2_2\[295] = Net_32_2[368]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:newb_1\[296] = \TIA_1:MODIN2_1\[297]
+Removing Lhs of wire \TIA_1:MODIN2_1\[297] = Net_32_1[369]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:newb_0\[298] = \TIA_1:MODIN2_0\[299]
+Removing Lhs of wire \TIA_1:MODIN2_0\[299] = Net_32_0[370]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:dataa_4\[300] = \TIA_1:dvdr_4\[263]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:dataa_3\[301] = \TIA_1:dvdr_3\[266]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:dataa_2\[302] = \TIA_1:dvdr_2\[268]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:dataa_1\[303] = \TIA_1:dvdr_1\[270]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:dataa_0\[304] = \TIA_1:dvdr_0\[272]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:datab_4\[305] = Net_32_4[366]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:datab_3\[306] = Net_32_3[367]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:datab_2\[307] = Net_32_2[368]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:datab_1\[308] = Net_32_1[369]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:datab_0\[309] = Net_32_0[370]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:gx:u0:a_4\[310] = \TIA_1:dvdr_4\[263]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:gx:u0:a_3\[311] = \TIA_1:dvdr_3\[266]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:gx:u0:a_2\[312] = \TIA_1:dvdr_2\[268]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:gx:u0:a_1\[313] = \TIA_1:dvdr_1\[270]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:gx:u0:a_0\[314] = \TIA_1:dvdr_0\[272]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:gx:u0:b_4\[315] = Net_32_4[366]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:gx:u0:b_3\[316] = Net_32_3[367]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:gx:u0:b_2\[317] = Net_32_2[368]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:gx:u0:b_1\[318] = Net_32_1[369]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:gx:u0:b_0\[319] = Net_32_0[370]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:gx:u0:aeqb_0\[325] = tmpOE__Pin_1_net_0[223]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:gx:u0:eq_0\[326] = \TIA_1:MODULE_1:g1:a0:gx:u0:xnor_array_0\[324]
+Removing Lhs of wire \TIA_1:MODULE_1:g1:a0:gx:u0:eqi_0\[331] = \TIA_1:MODULE_1:g1:a0:gx:u0:eq_4\[330]
+Removing Rhs of wire Net_32_4[366] = \AUDF:control_out_4\[584]
+Removing Rhs of wire Net_32_4[366] = \AUDF:control_4\[593]
+Removing Rhs of wire Net_32_3[367] = \AUDF:control_out_3\[585]
+Removing Rhs of wire Net_32_3[367] = \AUDF:control_3\[594]
+Removing Rhs of wire Net_32_2[368] = \AUDF:control_out_2\[586]
+Removing Rhs of wire Net_32_2[368] = \AUDF:control_2\[595]
+Removing Rhs of wire Net_32_1[369] = \AUDF:control_out_1\[587]
+Removing Rhs of wire Net_32_1[369] = \AUDF:control_1\[596]
+Removing Rhs of wire Net_32_0[370] = \AUDF:control_out_0\[588]
+Removing Rhs of wire Net_32_0[370] = \AUDF:control_0\[597]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:a_23\[411] = zero[224]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:a_22\[412] = zero[224]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:a_21\[413] = zero[224]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:a_20\[414] = zero[224]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:a_19\[415] = zero[224]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:a_18\[416] = zero[224]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:a_17\[417] = zero[224]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:a_16\[418] = zero[224]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:a_15\[419] = zero[224]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:a_14\[420] = zero[224]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:a_13\[421] = zero[224]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:a_12\[422] = zero[224]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:a_11\[423] = zero[224]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:a_10\[424] = zero[224]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:a_9\[425] = zero[224]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:a_8\[426] = zero[224]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:a_7\[427] = zero[224]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:a_6\[428] = zero[224]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:a_5\[429] = zero[224]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:a_4\[430] = \TIA_1:dvdr_4\[263]
+Removing Lhs of wire \TIA_1:MODIN3_4\[431] = \TIA_1:dvdr_4\[263]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:a_3\[432] = \TIA_1:dvdr_3\[266]
+Removing Lhs of wire \TIA_1:MODIN3_3\[433] = \TIA_1:dvdr_3\[266]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:a_2\[434] = \TIA_1:dvdr_2\[268]
+Removing Lhs of wire \TIA_1:MODIN3_2\[435] = \TIA_1:dvdr_2\[268]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:a_1\[436] = \TIA_1:dvdr_1\[270]
+Removing Lhs of wire \TIA_1:MODIN3_1\[437] = \TIA_1:dvdr_1\[270]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:a_0\[438] = \TIA_1:dvdr_0\[272]
+Removing Lhs of wire \TIA_1:MODIN3_0\[439] = \TIA_1:dvdr_0\[272]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_0\[568] = tmpOE__Pin_1_net_0[223]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:b_0\[569] = tmpOE__Pin_1_net_0[223]
+Removing Lhs of wire tmpOE__Pin_5_net_0[571] = tmpOE__Pin_1_net_0[223]
+Removing Lhs of wire \AUDF:clk\[576] = zero[224]
+Removing Lhs of wire \AUDF:rst\[577] = zero[224]
+Removing Lhs of wire \AUDC:clk\[598] = zero[224]
+Removing Lhs of wire \AUDC:rst\[599] = zero[224]
+Removing Lhs of wire tmpOE__Pin_6_net_0[622] = tmpOE__Pin_1_net_0[223]
+Removing Lhs of wire tmpOE__Pin_8_net_0[629] = tmpOE__Pin_1_net_0[223]
+
+------------------------------------------------------
+Aliased 0 equations, 122 wires.
+------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification
+----------------------------------------------------------
+
+Substituting virtuals - pass 1:
+
+Note:  Expanding virtual equation for 'zero' (cost = 0):
+zero <=  ('0') ;
+
+Note:  Expanding virtual equation for 'tmpOE__Pin_1_net_0' (cost = 0):
+tmpOE__Pin_1_net_0 <=  ('1') ;
+
+Note:  Expanding virtual equation for '\TIA_1:sr4_in\' (cost = 6):
+\TIA_1:sr4_in\ <= ((not Net_31_3 and not Net_31_2 and \TIA_1:sr4_3\ and \TIA_1:sr4_2\ and \TIA_1:sr4_1\ and Net_41)
+	OR (not Net_31_3 and not Net_31_2 and not Net_31_1 and not Net_31_0)
+	OR (not \TIA_1:sr4_2\ and \TIA_1:sr4_3\ and Net_31_3 and Net_31_2)
+	OR (not Net_31_2 and \TIA_1:sr5_0\ and Net_31_3)
+	OR (not \TIA_1:sr4_3\ and not Net_31_3 and Net_31_2)
+	OR (not \TIA_1:sr4_1\ and Net_31_3 and Net_31_2));
+
+Note:  Expanding virtual equation for '\TIA_1:sr5_tap\' (cost = 6):
+\TIA_1:sr5_tap\ <= ((not \TIA_1:sr5_0\ and not Net_31_1 and not Net_31_0 and Net_41)
+	OR (not Net_31_1 and not Net_31_0 and not Net_41 and \TIA_1:sr5_0\)
+	OR (not \TIA_1:sr5_0\ and \TIA_1:sr5_3\ and Net_31_0)
+	OR (not \TIA_1:sr5_3\ and \TIA_1:sr5_0\ and Net_31_0)
+	OR (not \TIA_1:sr5_0\ and \TIA_1:sr5_3\ and Net_31_1)
+	OR (not \TIA_1:sr5_3\ and \TIA_1:sr5_0\ and Net_31_1));
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_1:g1:a0:gx:u0:xnor_array_4\' (cost = 2):
+\TIA_1:MODULE_1:g1:a0:gx:u0:xnor_array_4\ <= ((not \TIA_1:dvdr_4\ and not Net_32_4)
+	OR (\TIA_1:dvdr_4\ and Net_32_4));
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_1:g1:a0:gx:u0:xnor_array_3\' (cost = 2):
+\TIA_1:MODULE_1:g1:a0:gx:u0:xnor_array_3\ <= ((not \TIA_1:dvdr_3\ and not Net_32_3)
+	OR (\TIA_1:dvdr_3\ and Net_32_3));
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_1:g1:a0:gx:u0:xnor_array_2\' (cost = 6):
+\TIA_1:MODULE_1:g1:a0:gx:u0:xnor_array_2\ <= ((not \TIA_1:dvdr_2\ and not Net_32_2)
+	OR (\TIA_1:dvdr_2\ and Net_32_2));
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_1:g1:a0:gx:u0:xnor_array_1\' (cost = 6):
+\TIA_1:MODULE_1:g1:a0:gx:u0:xnor_array_1\ <= ((not \TIA_1:dvdr_1\ and not Net_32_1)
+	OR (\TIA_1:dvdr_1\ and Net_32_1));
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_1:g1:a0:gx:u0:xnor_array_0\' (cost = 4):
+\TIA_1:MODULE_1:g1:a0:gx:u0:xnor_array_0\ <= ((not \TIA_1:dvdr_0\ and not Net_32_0)
+	OR (\TIA_1:dvdr_0\ and Net_32_0));
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_1:g1:a0:gx:u0:eq_1\' (cost = 8):
+\TIA_1:MODULE_1:g1:a0:gx:u0:eq_1\ <= ((not \TIA_1:dvdr_1\ and not \TIA_1:dvdr_0\ and not Net_32_1 and not Net_32_0)
+	OR (not \TIA_1:dvdr_1\ and not Net_32_1 and \TIA_1:dvdr_0\ and Net_32_0)
+	OR (not \TIA_1:dvdr_0\ and not Net_32_0 and \TIA_1:dvdr_1\ and Net_32_1)
+	OR (\TIA_1:dvdr_1\ and \TIA_1:dvdr_0\ and Net_32_1 and Net_32_0));
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_1:g1:a0:gx:u0:eq_2\' (cost = 16):
+\TIA_1:MODULE_1:g1:a0:gx:u0:eq_2\ <= ((not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_1\ and not \TIA_1:dvdr_0\ and not Net_32_2 and not Net_32_1 and not Net_32_0)
+	OR (not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_1\ and not Net_32_2 and not Net_32_1 and \TIA_1:dvdr_0\ and Net_32_0)
+	OR (not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_0\ and not Net_32_2 and not Net_32_0 and \TIA_1:dvdr_1\ and Net_32_1)
+	OR (not \TIA_1:dvdr_2\ and not Net_32_2 and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\ and Net_32_1 and Net_32_0)
+	OR (not \TIA_1:dvdr_1\ and not \TIA_1:dvdr_0\ and not Net_32_1 and not Net_32_0 and \TIA_1:dvdr_2\ and Net_32_2)
+	OR (not \TIA_1:dvdr_1\ and not Net_32_1 and \TIA_1:dvdr_2\ and \TIA_1:dvdr_0\ and Net_32_2 and Net_32_0)
+	OR (not \TIA_1:dvdr_0\ and not Net_32_0 and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and Net_32_2 and Net_32_1)
+	OR (\TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\ and Net_32_2 and Net_32_1 and Net_32_0));
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_1:g1:a0:gx:u0:eq_3\' (cost = 32):
+\TIA_1:MODULE_1:g1:a0:gx:u0:eq_3\ <= ((not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_1\ and not \TIA_1:dvdr_0\ and not Net_32_3 and not Net_32_2 and not Net_32_1 and not Net_32_0)
+	OR (not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_1\ and not Net_32_3 and not Net_32_2 and not Net_32_1 and \TIA_1:dvdr_0\ and Net_32_0)
+	OR (not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_0\ and not Net_32_3 and not Net_32_2 and not Net_32_0 and \TIA_1:dvdr_1\ and Net_32_1)
+	OR (not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_2\ and not Net_32_3 and not Net_32_2 and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\ and Net_32_1 and Net_32_0)
+	OR (not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_1\ and not \TIA_1:dvdr_0\ and not Net_32_3 and not Net_32_1 and not Net_32_0 and \TIA_1:dvdr_2\ and Net_32_2)
+	OR (not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_1\ and not Net_32_3 and not Net_32_1 and \TIA_1:dvdr_2\ and \TIA_1:dvdr_0\ and Net_32_2 and Net_32_0)
+	OR (not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_0\ and not Net_32_3 and not Net_32_0 and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and Net_32_2 and Net_32_1)
+	OR (not \TIA_1:dvdr_3\ and not Net_32_3 and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\ and Net_32_2 and Net_32_1 and Net_32_0)
+	OR (not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_1\ and not \TIA_1:dvdr_0\ and not Net_32_2 and not Net_32_1 and not Net_32_0 and \TIA_1:dvdr_3\ and Net_32_3)
+	OR (not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_1\ and not Net_32_2 and not Net_32_1 and \TIA_1:dvdr_3\ and \TIA_1:dvdr_0\ and Net_32_3 and Net_32_0)
+	OR (not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_0\ and not Net_32_2 and not Net_32_0 and \TIA_1:dvdr_3\ and \TIA_1:dvdr_1\ and Net_32_3 and Net_32_1)
+	OR (not \TIA_1:dvdr_2\ and not Net_32_2 and \TIA_1:dvdr_3\ and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\ and Net_32_3 and Net_32_1 and Net_32_0)
+	OR (not \TIA_1:dvdr_1\ and not \TIA_1:dvdr_0\ and not Net_32_1 and not Net_32_0 and \TIA_1:dvdr_3\ and \TIA_1:dvdr_2\ and Net_32_3 and Net_32_2)
+	OR (not \TIA_1:dvdr_1\ and not Net_32_1 and \TIA_1:dvdr_3\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_0\ and Net_32_3 and Net_32_2 and Net_32_0)
+	OR (not \TIA_1:dvdr_0\ and not Net_32_0 and \TIA_1:dvdr_3\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and Net_32_3 and Net_32_2 and Net_32_1)
+	OR (\TIA_1:dvdr_3\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\ and Net_32_3 and Net_32_2 and Net_32_1 and Net_32_0));
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_1:g1:a0:gx:u0:lt_0\' (cost = 2):
+\TIA_1:MODULE_1:g1:a0:gx:u0:lt_0\ <= ((not \TIA_1:dvdr_0\ and Net_32_0));
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_1:g1:a0:gx:u0:gt_0\' (cost = 2):
+\TIA_1:MODULE_1:g1:a0:gx:u0:gt_0\ <= ((not Net_32_0 and \TIA_1:dvdr_0\));
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_1:g1:a0:gx:u0:lt_1\' (cost = 6):
+\TIA_1:MODULE_1:g1:a0:gx:u0:lt_1\ <= ((not \TIA_1:dvdr_1\ and not \TIA_1:dvdr_0\ and Net_32_0)
+	OR (not \TIA_1:dvdr_0\ and Net_32_1 and Net_32_0)
+	OR (not \TIA_1:dvdr_1\ and Net_32_1));
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_1:g1:a0:gx:u0:gt_1\' (cost = 6):
+\TIA_1:MODULE_1:g1:a0:gx:u0:gt_1\ <= ((not Net_32_1 and not Net_32_0 and \TIA_1:dvdr_0\)
+	OR (not Net_32_0 and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\)
+	OR (not Net_32_1 and \TIA_1:dvdr_1\));
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_1\' (cost = 0):
+\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_1\ <= (\TIA_1:dvdr_0\);
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:s_0\' (cost = 0):
+\TIA_1:MODULE_2:g2:a0:s_0\ <= (not \TIA_1:dvdr_0\);
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_17\' (cost = 0):
+\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_17\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_9\' (cost = 0):
+\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_9\ <=  ('0') ;
+
+
+Substituting virtuals - pass 2:
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_1:g1:a0:gx:u0:eq_4\' (cost = 32):
+\TIA_1:MODULE_1:g1:a0:gx:u0:eq_4\ <= ((not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_1\ and not \TIA_1:dvdr_0\ and not Net_32_4 and not Net_32_3 and not Net_32_2 and not Net_32_1 and not Net_32_0)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_1\ and not Net_32_4 and not Net_32_3 and not Net_32_2 and not Net_32_1 and \TIA_1:dvdr_0\ and Net_32_0)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_0\ and not Net_32_4 and not Net_32_3 and not Net_32_2 and not Net_32_0 and \TIA_1:dvdr_1\ and Net_32_1)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_2\ and not Net_32_4 and not Net_32_3 and not Net_32_2 and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\ and Net_32_1 and Net_32_0)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_1\ and not \TIA_1:dvdr_0\ and not Net_32_4 and not Net_32_3 and not Net_32_1 and not Net_32_0 and \TIA_1:dvdr_2\ and Net_32_2)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_1\ and not Net_32_4 and not Net_32_3 and not Net_32_1 and \TIA_1:dvdr_2\ and \TIA_1:dvdr_0\ and Net_32_2 and Net_32_0)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_0\ and not Net_32_4 and not Net_32_3 and not Net_32_0 and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and Net_32_2 and Net_32_1)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_3\ and not Net_32_4 and not Net_32_3 and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\ and Net_32_2 and Net_32_1 and Net_32_0)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_1\ and not \TIA_1:dvdr_0\ and not Net_32_4 and not Net_32_2 and not Net_32_1 and not Net_32_0 and \TIA_1:dvdr_3\ and Net_32_3)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_1\ and not Net_32_4 and not Net_32_2 and not Net_32_1 and \TIA_1:dvdr_3\ and \TIA_1:dvdr_0\ and Net_32_3 and Net_32_0)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_0\ and not Net_32_4 and not Net_32_2 and not Net_32_0 and \TIA_1:dvdr_3\ and \TIA_1:dvdr_1\ and Net_32_3 and Net_32_1)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_2\ and not Net_32_4 and not Net_32_2 and \TIA_1:dvdr_3\ and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\ and Net_32_3 and Net_32_1 and Net_32_0)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_1\ and not \TIA_1:dvdr_0\ and not Net_32_4 and not Net_32_1 and not Net_32_0 and \TIA_1:dvdr_3\ and \TIA_1:dvdr_2\ and Net_32_3 and Net_32_2)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_1\ and not Net_32_4 and not Net_32_1 and \TIA_1:dvdr_3\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_0\ and Net_32_3 and Net_32_2 and Net_32_0)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_0\ and not Net_32_4 and not Net_32_0 and \TIA_1:dvdr_3\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and Net_32_3 and Net_32_2 and Net_32_1)
+	OR (not \TIA_1:dvdr_4\ and not Net_32_4 and \TIA_1:dvdr_3\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\ and Net_32_3 and Net_32_2 and Net_32_1 and Net_32_0)
+	OR (not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_1\ and not \TIA_1:dvdr_0\ and not Net_32_3 and not Net_32_2 and not Net_32_1 and not Net_32_0 and \TIA_1:dvdr_4\ and Net_32_4)
+	OR (not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_1\ and not Net_32_3 and not Net_32_2 and not Net_32_1 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_0\ and Net_32_4 and Net_32_0)
+	OR (not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_0\ and not Net_32_3 and not Net_32_2 and not Net_32_0 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_1\ and Net_32_4 and Net_32_1)
+	OR (not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_2\ and not Net_32_3 and not Net_32_2 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\ and Net_32_4 and Net_32_1 and Net_32_0)
+	OR (not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_1\ and not \TIA_1:dvdr_0\ and not Net_32_3 and not Net_32_1 and not Net_32_0 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_2\ and Net_32_4 and Net_32_2)
+	OR (not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_1\ and not Net_32_3 and not Net_32_1 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_0\ and Net_32_4 and Net_32_2 and Net_32_0)
+	OR (not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_0\ and not Net_32_3 and not Net_32_0 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and Net_32_4 and Net_32_2 and Net_32_1)
+	OR (not \TIA_1:dvdr_3\ and not Net_32_3 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\ and Net_32_4 and Net_32_2 and Net_32_1 and Net_32_0)
+	OR (not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_1\ and not \TIA_1:dvdr_0\ and not Net_32_2 and not Net_32_1 and not Net_32_0 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_3\ and Net_32_4 and Net_32_3)
+	OR (not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_1\ and not Net_32_2 and not Net_32_1 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_3\ and \TIA_1:dvdr_0\ and Net_32_4 and Net_32_3 and Net_32_0)
+	OR (not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_0\ and not Net_32_2 and not Net_32_0 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_3\ and \TIA_1:dvdr_1\ and Net_32_4 and Net_32_3 and Net_32_1)
+	OR (not \TIA_1:dvdr_2\ and not Net_32_2 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_3\ and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\ and Net_32_4 and Net_32_3 and Net_32_1 and Net_32_0)
+	OR (not \TIA_1:dvdr_1\ and not \TIA_1:dvdr_0\ and not Net_32_1 and not Net_32_0 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_3\ and \TIA_1:dvdr_2\ and Net_32_4 and Net_32_3 and Net_32_2)
+	OR (not \TIA_1:dvdr_1\ and not Net_32_1 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_3\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_0\ and Net_32_4 and Net_32_3 and Net_32_2 and Net_32_0)
+	OR (not \TIA_1:dvdr_0\ and not Net_32_0 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_3\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and Net_32_4 and Net_32_3 and Net_32_2 and Net_32_1)
+	OR (\TIA_1:dvdr_4\ and \TIA_1:dvdr_3\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\ and Net_32_4 and Net_32_3 and Net_32_2 and Net_32_1 and Net_32_0));
+
+Note:  Expanding virtual equation for '\TIA_1:sr5_in\' (cost = 10):
+\TIA_1:sr5_in\ <= ((not \TIA_1:sr5_4\ and not \TIA_1:sr5_3\ and not \TIA_1:sr5_2\ and not \TIA_1:sr5_1\ and not \TIA_1:sr5_0\ and \TIA_1:sr4_3\ and \TIA_1:sr4_2\ and \TIA_1:sr4_1\ and Net_41)
+	OR (not Net_31_3 and not Net_31_2 and not Net_31_1 and not Net_31_0)
+	OR (not \TIA_1:sr5_4\ and not \TIA_1:sr5_2\ and not \TIA_1:sr5_1\ and not \TIA_1:sr5_0\ and Net_31_0)
+	OR (not \TIA_1:sr5_4\ and not \TIA_1:sr5_2\ and not \TIA_1:sr5_1\ and not \TIA_1:sr5_0\ and Net_31_1)
+	OR (not \TIA_1:sr5_0\ and not Net_31_1 and not Net_31_0 and Net_41)
+	OR (not Net_31_1 and not Net_31_0 and not Net_41 and \TIA_1:sr5_0\)
+	OR (not \TIA_1:sr5_0\ and \TIA_1:sr5_3\ and Net_31_0)
+	OR (not \TIA_1:sr5_3\ and \TIA_1:sr5_0\ and Net_31_0)
+	OR (not \TIA_1:sr5_0\ and \TIA_1:sr5_3\ and Net_31_1)
+	OR (not \TIA_1:sr5_3\ and \TIA_1:sr5_0\ and Net_31_1));
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_2\' (cost = 4):
+\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_2\ <= ((\TIA_1:dvdr_1\ and \TIA_1:dvdr_0\));
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:s_1\' (cost = 2):
+\TIA_1:MODULE_2:g2:a0:s_1\ <= ((not \TIA_1:dvdr_0\ and \TIA_1:dvdr_1\)
+	OR (not \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\));
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_18\' (cost = 0):
+\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_18\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_10\' (cost = 0):
+\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_10\ <=  ('0') ;
+
+
+Substituting virtuals - pass 3:
+
+Note:  Virtual signal \TIA_1:sr5_cnt\ with ( cost: 1073741824 or cost_inv: 1073741824)  > 90 or with size: 32 > 102 has been made a (soft) node.
+\TIA_1:sr5_cnt\ <= ((not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_1\ and not \TIA_1:dvdr_0\ and not Net_32_4 and not Net_32_3 and not Net_32_2 and not Net_32_1 and not Net_32_0)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_1\ and not Net_32_4 and not Net_32_3 and not Net_32_2 and not Net_32_1 and \TIA_1:dvdr_0\ and Net_32_0)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_0\ and not Net_32_4 and not Net_32_3 and not Net_32_2 and not Net_32_0 and \TIA_1:dvdr_1\ and Net_32_1)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_2\ and not Net_32_4 and not Net_32_3 and not Net_32_2 and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\ and Net_32_1 and Net_32_0)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_1\ and not \TIA_1:dvdr_0\ and not Net_32_4 and not Net_32_3 and not Net_32_1 and not Net_32_0 and \TIA_1:dvdr_2\ and Net_32_2)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_1\ and not Net_32_4 and not Net_32_3 and not Net_32_1 and \TIA_1:dvdr_2\ and \TIA_1:dvdr_0\ and Net_32_2 and Net_32_0)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_0\ and not Net_32_4 and not Net_32_3 and not Net_32_0 and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and Net_32_2 and Net_32_1)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_3\ and not Net_32_4 and not Net_32_3 and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\ and Net_32_2 and Net_32_1 and Net_32_0)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_1\ and not \TIA_1:dvdr_0\ and not Net_32_4 and not Net_32_2 and not Net_32_1 and not Net_32_0 and \TIA_1:dvdr_3\ and Net_32_3)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_1\ and not Net_32_4 and not Net_32_2 and not Net_32_1 and \TIA_1:dvdr_3\ and \TIA_1:dvdr_0\ and Net_32_3 and Net_32_0)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_0\ and not Net_32_4 and not Net_32_2 and not Net_32_0 and \TIA_1:dvdr_3\ and \TIA_1:dvdr_1\ and Net_32_3 and Net_32_1)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_2\ and not Net_32_4 and not Net_32_2 and \TIA_1:dvdr_3\ and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\ and Net_32_3 and Net_32_1 and Net_32_0)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_1\ and not \TIA_1:dvdr_0\ and not Net_32_4 and not Net_32_1 and not Net_32_0 and \TIA_1:dvdr_3\ and \TIA_1:dvdr_2\ and Net_32_3 and Net_32_2)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_1\ and not Net_32_4 and not Net_32_1 and \TIA_1:dvdr_3\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_0\ and Net_32_3 and Net_32_2 and Net_32_0)
+	OR (not \TIA_1:dvdr_4\ and not \TIA_1:dvdr_0\ and not Net_32_4 and not Net_32_0 and \TIA_1:dvdr_3\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and Net_32_3 and Net_32_2 and Net_32_1)
+	OR (not \TIA_1:dvdr_4\ and not Net_32_4 and \TIA_1:dvdr_3\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\ and Net_32_3 and Net_32_2 and Net_32_1 and Net_32_0)
+	OR (not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_1\ and not \TIA_1:dvdr_0\ and not Net_32_3 and not Net_32_2 and not Net_32_1 and not Net_32_0 and \TIA_1:dvdr_4\ and Net_32_4)
+	OR (not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_1\ and not Net_32_3 and not Net_32_2 and not Net_32_1 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_0\ and Net_32_4 and Net_32_0)
+	OR (not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_0\ and not Net_32_3 and not Net_32_2 and not Net_32_0 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_1\ and Net_32_4 and Net_32_1)
+	OR (not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_2\ and not Net_32_3 and not Net_32_2 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\ and Net_32_4 and Net_32_1 and Net_32_0)
+	OR (not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_1\ and not \TIA_1:dvdr_0\ and not Net_32_3 and not Net_32_1 and not Net_32_0 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_2\ and Net_32_4 and Net_32_2)
+	OR (not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_1\ and not Net_32_3 and not Net_32_1 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_0\ and Net_32_4 and Net_32_2 and Net_32_0)
+	OR (not \TIA_1:dvdr_3\ and not \TIA_1:dvdr_0\ and not Net_32_3 and not Net_32_0 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and Net_32_4 and Net_32_2 and Net_32_1)
+	OR (not \TIA_1:dvdr_3\ and not Net_32_3 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\ and Net_32_4 and Net_32_2 and Net_32_1 and Net_32_0)
+	OR (not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_1\ and not \TIA_1:dvdr_0\ and not Net_32_2 and not Net_32_1 and not Net_32_0 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_3\ and Net_32_4 and Net_32_3)
+	OR (not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_1\ and not Net_32_2 and not Net_32_1 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_3\ and \TIA_1:dvdr_0\ and Net_32_4 and Net_32_3 and Net_32_0)
+	OR (not \TIA_1:dvdr_2\ and not \TIA_1:dvdr_0\ and not Net_32_2 and not Net_32_0 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_3\ and \TIA_1:dvdr_1\ and Net_32_4 and Net_32_3 and Net_32_1)
+	OR (not \TIA_1:dvdr_2\ and not Net_32_2 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_3\ and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\ and Net_32_4 and Net_32_3 and Net_32_1 and Net_32_0)
+	OR (not \TIA_1:dvdr_1\ and not \TIA_1:dvdr_0\ and not Net_32_1 and not Net_32_0 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_3\ and \TIA_1:dvdr_2\ and Net_32_4 and Net_32_3 and Net_32_2)
+	OR (not \TIA_1:dvdr_1\ and not Net_32_1 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_3\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_0\ and Net_32_4 and Net_32_3 and Net_32_2 and Net_32_0)
+	OR (not \TIA_1:dvdr_0\ and not Net_32_0 and \TIA_1:dvdr_4\ and \TIA_1:dvdr_3\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and Net_32_4 and Net_32_3 and Net_32_2 and Net_32_1)
+	OR (\TIA_1:dvdr_4\ and \TIA_1:dvdr_3\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\ and Net_32_4 and Net_32_3 and Net_32_2 and Net_32_1 and Net_32_0));
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_3\' (cost = 5):
+\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_3\ <= ((\TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\));
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:s_2\' (cost = 3):
+\TIA_1:MODULE_2:g2:a0:s_2\ <= ((not \TIA_1:dvdr_1\ and \TIA_1:dvdr_2\)
+	OR (not \TIA_1:dvdr_0\ and \TIA_1:dvdr_2\)
+	OR (not \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\));
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_19\' (cost = 0):
+\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_19\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_11\' (cost = 0):
+\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_11\ <=  ('0') ;
+
+
+Substituting virtuals - pass 4:
+
+Note:  Virtual signal \TIA_1:sr4_cnt\ with ( cost: 180 or cost_inv: 6)  > 90 or with size: 3 > 102 has been made a (soft) node.
+\TIA_1:sr4_cnt\ <= ((not \TIA_1:sr5_4\ and not \TIA_1:sr5_3\ and not \TIA_1:sr5_2\ and not Net_31_0 and \TIA_1:sr5_cnt\ and \TIA_1:sr5_1\)
+	OR (\TIA_1:sr5_cnt\ and \TIA_1:sr5_0\ and Net_31_0)
+	OR (not Net_31_1 and \TIA_1:sr5_cnt\));
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_4\' (cost = 6):
+\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_4\ <= ((\TIA_1:dvdr_3\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\));
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:s_3\' (cost = 4):
+\TIA_1:MODULE_2:g2:a0:s_3\ <= ((not \TIA_1:dvdr_2\ and \TIA_1:dvdr_3\)
+	OR (not \TIA_1:dvdr_1\ and \TIA_1:dvdr_3\)
+	OR (not \TIA_1:dvdr_0\ and \TIA_1:dvdr_3\)
+	OR (not \TIA_1:dvdr_3\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\));
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_20\' (cost = 0):
+\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_20\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_12\' (cost = 0):
+\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_12\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_5\' (cost = 0):
+\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_5\ <= ((\TIA_1:dvdr_4\ and \TIA_1:dvdr_3\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\));
+
+
+Substituting virtuals - pass 5:
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:s_4\' (cost = 5):
+\TIA_1:MODULE_2:g2:a0:s_4\ <= ((not \TIA_1:dvdr_3\ and \TIA_1:dvdr_4\)
+	OR (not \TIA_1:dvdr_2\ and \TIA_1:dvdr_4\)
+	OR (not \TIA_1:dvdr_1\ and \TIA_1:dvdr_4\)
+	OR (not \TIA_1:dvdr_0\ and \TIA_1:dvdr_4\)
+	OR (not \TIA_1:dvdr_4\ and \TIA_1:dvdr_3\ and \TIA_1:dvdr_2\ and \TIA_1:dvdr_1\ and \TIA_1:dvdr_0\));
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_21\' (cost = 0):
+\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_21\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_13\' (cost = 0):
+\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_13\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_6\' (cost = 0):
+\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_6\ <=  ('0') ;
+
+
+Substituting virtuals - pass 6:
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_22\' (cost = 0):
+\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_22\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_14\' (cost = 0):
+\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_14\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_7\' (cost = 0):
+\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_7\ <=  ('0') ;
+
+
+Substituting virtuals - pass 7:
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_23\' (cost = 0):
+\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_23\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_15\' (cost = 0):
+\TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_15\ <=  ('0') ;
+
+
+Substituting virtuals - pass 8:
+
+
+----------------------------------------------------------
+Circuit simplification results:
+
+	Expanded 44 signals.
+	Turned 2 signals into soft nodes.
+	Maximum default expansion cost was set at 3.
+----------------------------------------------------------
+
+------------------------------------------------------
+Alias Detection
+------------------------------------------------------
+Aliasing \TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:b_24\ to zero
+Aliasing \TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:b_16\ to zero
+Aliasing \TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:b_8\ to zero
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:b_24\[539] = zero[224]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:b_16\[549] = zero[224]
+Removing Lhs of wire \TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:b_8\[559] = zero[224]
+
+------------------------------------------------------
+Aliased 0 equations, 3 wires.
+------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification
+----------------------------------------------------------
+
+Eliminating unused logic - pass 1:
+
+
+Eliminating unused logic - pass 2:
+
+
+Substituting virtuals - pass 1:
+
+
+----------------------------------------------------------
+Circuit simplification results:
+
+	Expanded 0 signals.
+	Turned 0 signals into soft nodes.
+	Maximum default expansion cost was set at 3.
+----------------------------------------------------------
+
+topld:  No errors.
+
+CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp
+Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\bin\warp.exe
+Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\214016586\Documents\GitHub\PSoC_TIA\TIA\TIA.cydsn\TIA.cyprj -dcpsoc3 TIA.v -verilog
+</CYPRESSTAG>
+Warp synthesis phase: Elapsed time ==> 2s.161ms
+<CYPRESSTAG name="Fitter results...">
+<CYPRESSTAG name="Fitter startup details...">
+cyp3fit: V4.0.0.432, Family: PSoC3, Started at: Tuesday, 25 July 2017 09:58:55
+Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\214016586\Documents\GitHub\PSoC_TIA\TIA\TIA.cydsn\TIA.cyprj -d CY8C4245AXI-483 TIA.v -verilog
+</CYPRESSTAG>
+<CYPRESSTAG name="Design parsing">
+Design parsing phase: Elapsed time ==> 0s.014ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Tech Mapping">
+<CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
+    Removed wire end \TIA_1:MODULE_1:g1:a0:gx:u0:lti_0\ kept \TIA_1:MODULE_1:g1:a0:gx:u0:lt_2\
+    Removed wire end \TIA_1:MODULE_1:g1:a0:gx:u0:gti_0\ kept \TIA_1:MODULE_1:g1:a0:gx:u0:gt_2\
+    Removed wire end \TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_24\ kept zero
+    Removed wire end \TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_16\ kept zero
+    Removed wire end \TIA_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_8\ kept zero
+
+Removing unused cells resulting from optimization
+Done removing unused cells.
+<CYPRESSTAG name="Global Clock Selection" icon="FILE_RPT_TECHM">
+    Fixed Function Clock 7: Automatic-assigning  clock 'ADC_SAR_Seq_1_intClock'. Signal=\ADC_SAR_Seq_1:Net_1845_ff7\
+    Digital Clock 0: Automatic-assigning  clock 'Clock_2'. Fanout=1, Signal=Net_83_digital
+<CYPRESSTAG name="UDB Clock/Enable Remapping Results">
+</CYPRESSTAG>
+<CYPRESSTAG name="UDB Routed Clock Assignment">
+    Routed Clock: Pin_8(0):iocell.fb
+        Effective Clock: Pin_8(0):iocell.fb
+        Enable Signal: True
+</CYPRESSTAG>
+</CYPRESSTAG>
+ADD: pft.M0040: information: The following 7 pin(s) will be assigned a location by the fitter: Pin_1(0), Pin_2(0), Pin_3(0), Pin_4(0), Pin_5(0), Pin_6(0), Pin_8(0)
+
+
+Removing unused cells resulting from optimization
+Done removing unused cells.
+<CYPRESSTAG name="Duplicate Macrocell detection">
+</CYPRESSTAG>
+</CYPRESSTAG>
+<CYPRESSTAG name="Duplicate Macrocell detection">
+</CYPRESSTAG>
+<CYPRESSTAG name="Design Equations" icon="FILE_RPT_EQUATION">
+
+------------------------------------------------------------
+Design Equations
+------------------------------------------------------------
+    <CYPRESSTAG name="Pin listing">
+
+    ------------------------------------------------------------
+    Pin listing
+    ------------------------------------------------------------
+
+    Pin : Name = Pin_1(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_ANALOG
+            VTrip: EITHER
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: True
+            Can contain Digital: False
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilitites: ANALOG
+            Initial Value: 1
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => Pin_1(0)__PA ,
+            analog_term => Net_25 ,
+            pad => Pin_1(0)_PAD );
+
+    Pin : Name = Pin_2(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_ANALOG
+            VTrip: EITHER
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: True
+            Can contain Digital: False
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilitites: ANALOG
+            Initial Value: 1
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => Pin_2(0)__PA ,
+            analog_term => Net_23 ,
+            pad => Pin_2(0)_PAD );
+
+    Pin : Name = Pin_3(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_ANALOG
+            VTrip: EITHER
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: True
+            Can contain Digital: False
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilitites: ANALOG
+            Initial Value: 1
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => Pin_3(0)__PA ,
+            analog_term => Net_21 ,
+            pad => Pin_3(0)_PAD );
+
+    Pin : Name = Pin_4(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_ANALOG
+            VTrip: EITHER
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: True
+            Can contain Digital: False
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilitites: ANALOG
+            Initial Value: 1
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => Pin_4(0)__PA ,
+            analog_term => Net_19 ,
+            pad => Pin_4(0)_PAD );
+
+    Pin : Name = Pin_5(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: NOSYNC
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: CMOS_OUT
+            VTrip: EITHER
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL, ROUTABLE
+            Initial Value: 1
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => Pin_5(0)__PA ,
+            input => Net_41 ,
+            pad => Pin_5(0)_PAD );
+
+    Pin : Name = Pin_6(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: SYNC
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: CMOS_OUT
+            VTrip: EITHER
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: True
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL, ROUTABLE
+            Initial Value: 1
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => Pin_6(0)__PA ,
+            pad => Pin_6(0)_PAD );
+
+    Pin : Name = Pin_8(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: NOSYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_DIGITAL
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL, ROUTABLE
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => Pin_8(0)__PA ,
+            fb => Net_75 ,
+            pad => Pin_8(0)_PAD );
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Macrocell listing" icon="FILE_RPT_EQUATION">
+
+    ------------------------------------------------------------
+    Macrocell listing
+    ------------------------------------------------------------
+
+    MacroCell: Name=\TIA_1:sr5_cnt_split\, Mode=(Combinatorial)
+        Total # of inputs        : 10
+        Total # of product terms : 8
+            Clock Enable: True
+        Main Equation            : 8 pterms
+        (
+              \TIA_1:dvdr_4\ * !Net_32_4
+            + \TIA_1:dvdr_3\ * !Net_32_3
+            + !\TIA_1:dvdr_2\ * Net_32_2
+            + \TIA_1:dvdr_2\ * !Net_32_2
+            + !\TIA_1:dvdr_1\ * Net_32_1
+            + \TIA_1:dvdr_1\ * !Net_32_1
+            + !\TIA_1:dvdr_0\ * Net_32_0
+            + \TIA_1:dvdr_0\ * !Net_32_0
+        );
+        Output = \TIA_1:sr5_cnt_split\ (fanout=1)
+
+    MacroCell: Name=\TIA_1:sr5_cnt\, Mode=(Combinatorial)
+        Total # of inputs        : 5
+        Total # of product terms : 3
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        !(
+              !\TIA_1:dvdr_4\ * Net_32_4
+            + !\TIA_1:dvdr_3\ * Net_32_3
+            + \TIA_1:sr5_cnt_split\
+        );
+        Output = \TIA_1:sr5_cnt\ (fanout=12)
+        Properties               : 
+        {
+            soft = 1
+        }
+
+    MacroCell: Name=\TIA_1:sr4_cnt\, Mode=(Combinatorial)
+        Total # of inputs        : 8
+        Total # of product terms : 3
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        (
+              !\TIA_1:sr5_4\ * \TIA_1:sr5_cnt\ * !\TIA_1:sr5_3\ * 
+              !\TIA_1:sr5_2\ * \TIA_1:sr5_1\ * !Net_31_0
+            + \TIA_1:sr5_cnt\ * \TIA_1:sr5_0\ * Net_31_0
+            + \TIA_1:sr5_cnt\ * !Net_31_1
+        );
+        Output = \TIA_1:sr4_cnt\ (fanout=4)
+        Properties               : 
+        {
+            soft = 1
+        }
+
+    MacroCell: Name=\TIA_1:sr5_4_split\, Mode=(Combinatorial)
+        Total # of inputs        : 12
+        Total # of product terms : 8
+            Clock Enable: True
+        Main Equation            : 8 pterms
+        (
+              Net_75 * !\TIA_1:sr5_4\ * \TIA_1:sr5_cnt\ * !\TIA_1:sr5_2\ * 
+              !\TIA_1:sr5_1\ * !\TIA_1:sr5_0\ * Net_31_1
+            + Net_75 * !\TIA_1:sr5_4\ * \TIA_1:sr5_cnt\ * !\TIA_1:sr5_2\ * 
+              !\TIA_1:sr5_1\ * !\TIA_1:sr5_0\ * Net_31_0
+            + Net_75 * \TIA_1:sr5_cnt\ * !\TIA_1:sr5_3\ * \TIA_1:sr5_0\ * 
+              Net_31_0
+            + Net_75 * \TIA_1:sr5_cnt\ * \TIA_1:sr5_3\ * !\TIA_1:sr5_0\ * 
+              Net_31_1
+            + Net_75 * \TIA_1:sr5_cnt\ * \TIA_1:sr5_3\ * !\TIA_1:sr5_0\ * 
+              Net_31_0
+            + Net_75 * \TIA_1:sr5_cnt\ * !\TIA_1:sr5_0\ * !Net_31_1 * 
+              !Net_31_0 * Net_41
+            + Net_75 * \TIA_1:sr5_cnt\ * \TIA_1:sr5_0\ * !Net_31_1 * 
+              !Net_31_0 * !Net_41
+            + Net_75 * \TIA_1:sr5_cnt\ * !Net_31_3 * !Net_31_2 * !Net_31_1 * 
+              !Net_31_0
+        );
+        Output = \TIA_1:sr5_4_split\ (fanout=1)
+
+    MacroCell: Name=\TIA_1:sr4_3\, Mode=(D-Register)
+        Total # of inputs        : 11
+        Total # of product terms : 8
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 8 pterms
+        (
+              !Net_75 * \TIA_1:sr4_3\
+            + Net_75 * !\TIA_1:sr4_3\ * \TIA_1:sr4_cnt\ * !Net_31_3 * 
+              Net_31_2
+            + Net_75 * \TIA_1:sr4_cnt\ * !\TIA_1:sr4_1\ * Net_31_3 * Net_31_2
+            + Net_75 * \TIA_1:sr4_cnt\ * \TIA_1:sr5_0\ * Net_31_3 * !Net_31_2
+            + Net_75 * \TIA_1:sr4_cnt\ * !Net_31_3 * !Net_31_2 * !Net_31_1 * 
+              !Net_31_0
+            + \TIA_1:sr4_3\ * !\TIA_1:sr4_cnt\
+            + \TIA_1:sr4_3\ * !\TIA_1:sr4_2\ * Net_31_3 * Net_31_2
+            + \TIA_1:sr4_3\ * \TIA_1:sr4_2\ * \TIA_1:sr4_1\ * !Net_31_3 * 
+              !Net_31_2 * Net_41
+        );
+        Output = \TIA_1:sr4_3\ (fanout=2)
+
+    MacroCell: Name=\TIA_1:sr4_2\, Mode=(T-Register)
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_75 * !\TIA_1:sr4_3\ * \TIA_1:sr4_cnt\ * \TIA_1:sr4_2\
+            + Net_75 * \TIA_1:sr4_3\ * \TIA_1:sr4_cnt\ * !\TIA_1:sr4_2\
+        );
+        Output = \TIA_1:sr4_2\ (fanout=3)
+
+    MacroCell: Name=\TIA_1:sr4_1\, Mode=(T-Register)
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_75 * \TIA_1:sr4_cnt\ * !\TIA_1:sr4_2\ * \TIA_1:sr4_1\
+            + Net_75 * \TIA_1:sr4_cnt\ * \TIA_1:sr4_2\ * !\TIA_1:sr4_1\
+        );
+        Output = \TIA_1:sr4_1\ (fanout=3)
+
+    MacroCell: Name=Net_41, Mode=(T-Register)
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_75 * \TIA_1:sr4_cnt\ * !\TIA_1:sr4_1\ * Net_41
+            + Net_75 * \TIA_1:sr4_cnt\ * \TIA_1:sr4_1\ * !Net_41
+        );
+        Output = Net_41 (fanout=4)
+
+    MacroCell: Name=\TIA_1:sr5_4\, Mode=(D-Register)
+        Total # of inputs        : 7
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              !Net_75 * \TIA_1:sr5_4\
+            + Net_75 * \TIA_1:sr5_cnt\ * !\TIA_1:sr5_3\ * \TIA_1:sr5_0\ * 
+              Net_31_1
+            + \TIA_1:sr5_4\ * !\TIA_1:sr5_cnt\
+            + \TIA_1:sr5_4_split\
+        );
+        Output = \TIA_1:sr5_4\ (fanout=4)
+
+    MacroCell: Name=\TIA_1:sr5_3\, Mode=(T-Register)
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_75 * !\TIA_1:sr5_4\ * \TIA_1:sr5_cnt\ * \TIA_1:sr5_3\
+            + Net_75 * \TIA_1:sr5_4\ * \TIA_1:sr5_cnt\ * !\TIA_1:sr5_3\
+        );
+        Output = \TIA_1:sr5_3\ (fanout=5)
+
+    MacroCell: Name=\TIA_1:sr5_2\, Mode=(T-Register)
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_75 * \TIA_1:sr5_cnt\ * !\TIA_1:sr5_3\ * \TIA_1:sr5_2\
+            + Net_75 * \TIA_1:sr5_cnt\ * \TIA_1:sr5_3\ * !\TIA_1:sr5_2\
+        );
+        Output = \TIA_1:sr5_2\ (fanout=4)
+
+    MacroCell: Name=\TIA_1:sr5_1\, Mode=(T-Register)
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_75 * \TIA_1:sr5_cnt\ * !\TIA_1:sr5_2\ * \TIA_1:sr5_1\
+            + Net_75 * \TIA_1:sr5_cnt\ * \TIA_1:sr5_2\ * !\TIA_1:sr5_1\
+        );
+        Output = \TIA_1:sr5_1\ (fanout=4)
+
+    MacroCell: Name=\TIA_1:sr5_0\, Mode=(T-Register)
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_75 * \TIA_1:sr5_cnt\ * !\TIA_1:sr5_1\ * \TIA_1:sr5_0\
+            + Net_75 * \TIA_1:sr5_cnt\ * \TIA_1:sr5_1\ * !\TIA_1:sr5_0\
+        );
+        Output = \TIA_1:sr5_0\ (fanout=5)
+
+    MacroCell: Name=\TIA_1:dvdr_4\, Mode=(T-Register)
+        Total # of inputs        : 7
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_75 * !\TIA_1:sr5_cnt\ * \TIA_1:dvdr_3\ * \TIA_1:dvdr_2\ * 
+              \TIA_1:dvdr_1\ * \TIA_1:dvdr_0\
+            + Net_75 * \TIA_1:sr5_cnt\ * !\TIA_1:dvdr_4\
+        );
+        Output = \TIA_1:dvdr_4\ (fanout=3)
+
+    MacroCell: Name=\TIA_1:dvdr_3\, Mode=(T-Register)
+        Total # of inputs        : 6
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_75 * !\TIA_1:sr5_cnt\ * \TIA_1:dvdr_2\ * \TIA_1:dvdr_1\ * 
+              \TIA_1:dvdr_0\
+            + Net_75 * \TIA_1:sr5_cnt\ * \TIA_1:dvdr_3\
+        );
+        Output = \TIA_1:dvdr_3\ (fanout=4)
+
+    MacroCell: Name=\TIA_1:dvdr_2\, Mode=(T-Register)
+        Total # of inputs        : 5
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_75 * !\TIA_1:sr5_cnt\ * \TIA_1:dvdr_1\ * \TIA_1:dvdr_0\
+            + Net_75 * \TIA_1:sr5_cnt\ * \TIA_1:dvdr_2\
+        );
+        Output = \TIA_1:dvdr_2\ (fanout=4)
+
+    MacroCell: Name=\TIA_1:dvdr_1\, Mode=(T-Register)
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_75 * !\TIA_1:sr5_cnt\ * \TIA_1:dvdr_0\
+            + Net_75 * \TIA_1:sr5_cnt\ * \TIA_1:dvdr_1\
+        );
+        Output = \TIA_1:dvdr_1\ (fanout=5)
+
+    MacroCell: Name=\TIA_1:dvdr_0\, Mode=(D-Register)
+        Total # of inputs        : 3
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !Net_75 * \TIA_1:dvdr_0\
+            + Net_75 * !\TIA_1:sr5_cnt\ * !\TIA_1:dvdr_0\
+        );
+        Output = \TIA_1:dvdr_0\ (fanout=6)
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Datapath listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Status register listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="StatusI register listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Sync listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Control register listing">
+
+    ------------------------------------------------------------
+    Control register listing
+    ------------------------------------------------------------
+
+    controlcell: Name =\AUDF:Sync:ctrl_reg\
+        PORT MAP (
+            control_7 => \AUDF:control_7\ ,
+            control_6 => \AUDF:control_6\ ,
+            control_5 => \AUDF:control_5\ ,
+            control_4 => Net_32_4 ,
+            control_3 => Net_32_3 ,
+            control_2 => Net_32_2 ,
+            control_1 => Net_32_1 ,
+            control_0 => Net_32_0 );
+        Properties:
+        {
+            cy_ctrl_mode_0 = "00000000"
+            cy_ctrl_mode_1 = "00000000"
+            cy_ext_reset = 0
+            cy_force_order = 1
+            cy_init_value = "00010000"
+        }
+        Clock Enable: True
+
+    controlcell: Name =\AUDC:Sync:ctrl_reg\
+        PORT MAP (
+            control_7 => \AUDC:control_7\ ,
+            control_6 => \AUDC:control_6\ ,
+            control_5 => \AUDC:control_5\ ,
+            control_4 => \AUDC:control_4\ ,
+            control_3 => Net_31_3 ,
+            control_2 => Net_31_2 ,
+            control_1 => Net_31_1 ,
+            control_0 => Net_31_0 );
+        Properties:
+        {
+            cy_ctrl_mode_0 = "00000000"
+            cy_ctrl_mode_1 = "00000000"
+            cy_ext_reset = 0
+            cy_force_order = 1
+            cy_init_value = "00000100"
+        }
+        Clock Enable: True
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Count7 listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="DRQ listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Interrupt listing">
+
+    ------------------------------------------------------------
+    Interrupt listing
+    ------------------------------------------------------------
+
+    interrupt: Name =\ADC_SAR_Seq_1:IRQ\
+        PORT MAP (
+            interrupt => \ADC_SAR_Seq_1:Net_3112\ );
+        Properties:
+        {
+            int_type = "10"
+            is_nmi = 0
+        }
+    </CYPRESSTAG>
+</CYPRESSTAG>
+<CYPRESSTAG name="Technology mapping summary" expanded>
+
+------------------------------------------------------------
+Technology mapping summary
+------------------------------------------------------------
+
+Resource Type                 : Used : Free :  Max :  % Used
+============================================================
+Digital Clocks                :    1 :    3 :    4 : 25.00 %
+Interrupts                    :    1 :   31 :   32 :  3.13 %
+IO                            :    9 :   27 :   36 : 25.00 %
+Segment LCD                   :    0 :    1 :    1 :  0.00 %
+CapSense                      :    0 :    1 :    1 :  0.00 %
+Die Temp                      :    0 :    1 :    1 :  0.00 %
+Serial Communication (SCB)    :    0 :    2 :    2 :  0.00 %
+Timer/Counter/PWM             :    0 :    4 :    4 :  0.00 %
+UDB                           :      :      :      :        
+  Macrocells                  :   18 :   14 :   32 : 56.25 %
+  Unique P-terms              :   58 :    6 :   64 : 90.63 %
+  Total P-terms               :   58 :      :      :        
+  Datapath Cells              :    0 :    4 :    4 :  0.00 %
+  Status Cells                :    0 :    4 :    4 :  0.00 %
+  Control Cells               :    2 :    2 :    4 : 50.00 %
+    Control Registers         :    2 :      :      :        
+Comparator/Opamp              :    0 :    2 :    2 :  0.00 %
+LP Comparator                 :    0 :    2 :    2 :  0.00 %
+SAR ADC                       :    1 :    0 :    1 : 100.00 %
+DAC                           :      :      :      :        
+  7-bit IDAC                  :    0 :    1 :    1 :  0.00 %
+  8-bit IDAC                  :    0 :    1 :    1 :  0.00 %
+</CYPRESSTAG>
+Technology Mapping: Elapsed time ==> 0s.310ms
+Tech Mapping phase: Elapsed time ==> 0s.335ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Analog Placement">
+<CYPRESSTAG name="Analog Placement">
+Elapsed time ==> 0.1176727s
+</CYPRESSTAG>
+Analog Placement phase: Elapsed time ==> 0s.272ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Analog Routing">
+<CYPRESSTAG name="Analog Routing">
+Route success=True, Iterations=1 Elapsed=0.0463620 secs
+</CYPRESSTAG>
+Analog Routing phase: Elapsed time ==> 0s.047ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Analog Code Generation">
+============ Analog Final Answer Routes ============
+Dump of CyAnalogRoutingResultsDB
+Map of net to items {
+  Net: Net_19 {
+    p2_5
+  }
+  Net: Net_21 {
+    p2_6
+  }
+  Net: Net_23 {
+    p2_7
+  }
+  Net: Net_25 {
+    p2_0
+  }
+  Net: \ADC_SAR_Seq_1:Net_1851\ {
+  }
+  Net: \ADC_SAR_Seq_1:Net_3113\ {
+  }
+  Net: \ADC_SAR_Seq_1:mux_bus_minus_0\ {
+  }
+  Net: \ADC_SAR_Seq_1:mux_bus_minus_1\ {
+  }
+  Net: \ADC_SAR_Seq_1:mux_bus_minus_2\ {
+  }
+  Net: \ADC_SAR_Seq_1:mux_bus_minus_3\ {
+  }
+  Net: \ADC_SAR_Seq_1:mux_bus_minus_4\ {
+  }
+  Net: \ADC_SAR_Seq_1:mux_bus_plus_4\ {
+  }
+  Net: \ADC_SAR_Seq_1:muxout_plus\ {
+    sarmux_vplus
+  }
+  Net: AMuxNet::\ADC_SAR_Seq_1:cy_psoc4_sarmux_8\_CYAMUXSIDE_A {
+    SARMUX0_sw0
+    SARMUX0_sw7
+    SARMUX0_sw6
+    SARMUX0_sw5
+  }
+  Net: \ADC_SAR_Seq_1:muxout_minus\ {
+    sarmux_vminus
+  }
+  Net: AMuxNet::\ADC_SAR_Seq_1:cy_psoc4_sarmux_8\_CYAMUXSIDE_B {
+  }
+}
+Map of item to net {
+  p2_5                                             -> Net_19
+  p2_6                                             -> Net_21
+  p2_7                                             -> Net_23
+  p2_0                                             -> Net_25
+  sarmux_vplus                                     -> \ADC_SAR_Seq_1:muxout_plus\
+  SARMUX0_sw0                                      -> AMuxNet::\ADC_SAR_Seq_1:cy_psoc4_sarmux_8\_CYAMUXSIDE_A
+  SARMUX0_sw7                                      -> AMuxNet::\ADC_SAR_Seq_1:cy_psoc4_sarmux_8\_CYAMUXSIDE_A
+  SARMUX0_sw6                                      -> AMuxNet::\ADC_SAR_Seq_1:cy_psoc4_sarmux_8\_CYAMUXSIDE_A
+  SARMUX0_sw5                                      -> AMuxNet::\ADC_SAR_Seq_1:cy_psoc4_sarmux_8\_CYAMUXSIDE_A
+  sarmux_vminus                                    -> \ADC_SAR_Seq_1:muxout_minus\
+}
+Mux Info {
+  Mux: \ADC_SAR_Seq_1:cy_psoc4_sarmux_8\_CYAMUXSIDE_A {
+     Mouth: \ADC_SAR_Seq_1:muxout_plus\
+     Guts:  AMuxNet::\ADC_SAR_Seq_1:cy_psoc4_sarmux_8\_CYAMUXSIDE_A
+     IsSingleSwitching: False
+     IsStaticSwitching: False
+     IsAtMostOneSwitch: True
+    Arm: 0 {
+      Net:   Net_25
+      Outer: SARMUX0_sw0
+      Inner: __open__
+      Path {
+        SARMUX0_sw0
+        p2_0
+      }
+    }
+    Arm: 1 {
+      Net:   Net_23
+      Outer: SARMUX0_sw7
+      Inner: __open__
+      Path {
+        SARMUX0_sw7
+        p2_7
+      }
+    }
+    Arm: 2 {
+      Net:   Net_21
+      Outer: SARMUX0_sw6
+      Inner: __open__
+      Path {
+        SARMUX0_sw6
+        p2_6
+      }
+    }
+    Arm: 3 {
+      Net:   Net_19
+      Outer: SARMUX0_sw5
+      Inner: __open__
+      Path {
+        SARMUX0_sw5
+        p2_5
+      }
+    }
+  }
+  Mux: \ADC_SAR_Seq_1:cy_psoc4_sarmux_8\_CYAMUXSIDE_B {
+     Mouth: \ADC_SAR_Seq_1:muxout_minus\
+     Guts:  AMuxNet::\ADC_SAR_Seq_1:cy_psoc4_sarmux_8\_CYAMUXSIDE_B
+     IsSingleSwitching: False
+     IsStaticSwitching: False
+     IsAtMostOneSwitch: True
+    Arm: 0 {
+      Net:   \ADC_SAR_Seq_1:Net_1851\
+      Outer: __open__
+      Inner: __open__
+      Path {
+      }
+    }
+    Arm: 1 {
+      Net:   \ADC_SAR_Seq_1:Net_1851\
+      Outer: __open__
+      Inner: __open__
+      Path {
+      }
+    }
+    Arm: 2 {
+      Net:   \ADC_SAR_Seq_1:Net_1851\
+      Outer: __open__
+      Inner: __open__
+      Path {
+      }
+    }
+    Arm: 3 {
+      Net:   \ADC_SAR_Seq_1:Net_1851\
+      Outer: __open__
+      Inner: __open__
+      Path {
+      }
+    }
+  }
+}
+Analog Code Generation phase: Elapsed time ==> 0s.023ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Digital Placement">
+<CYPRESSTAG name="Detailed placement messages">
+I2076: Total run-time: 1.0 sec.
+
+</CYPRESSTAG>
+<CYPRESSTAG name="PLD Packing">
+<CYPRESSTAG name="PLD Packing Summary" expanded>
+
+------------------------------------------------------------
+PLD Packing Summary
+------------------------------------------------------------
+            Resource Type : Used : Free :  Max :  % Used
+    ====================================================
+                     PLDs :    8 :    0 :    8 : 100.00%
+
+<CYPRESSTAG name="PLD Statistics">
+
+        PLD Resource Type :     Average/LAB
+    =======================================
+                   Inputs :            9.00
+                   Pterms :            7.25
+               Macrocells :            2.25
+</CYPRESSTAG>
+<CYPRESSTAG name="Packed PLD Contents">
+Packed PLD Contents not displayed at this verbose level.</CYPRESSTAG>
+</CYPRESSTAG>
+PLD Packing: Elapsed time ==> 0s.001ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Partitioning">
+<CYPRESSTAG name="Initial Partitioning Summary">
+Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
+<CYPRESSTAG name="Final Partitioning Summary">
+Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
+Partitioning: Elapsed time ==> 0s.009ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Final Placement Summary">
+
+------------------------------------------------------------
+Final Placement Summary
+------------------------------------------------------------
+
+       Resource Type :      Count : Avg Inputs : Avg Outputs
+    ========================================================
+                 UDB :          4 :      12.75 :       4.50
+<CYPRESSTAG name="Final Placement Details">
+<CYPRESSTAG name="Component Details">
+
+------------------------------------------------------------
+Component Placement Details
+------------------------------------------------------------
+UDB [UDB=(0,0)] contents:
+LAB@[UDB=(0,0)][LB=0] #macrocells=2, #inputs=10, #pterms=7
+{
+    [McSlotId=0]:     MacroCell: Name=\TIA_1:sr5_4\, Mode=(D-Register) @ [UDB=(0,0)][LB=0][MC=0]
+        Total # of inputs        : 7
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              !Net_75 * \TIA_1:sr5_4\
+            + Net_75 * \TIA_1:sr5_cnt\ * !\TIA_1:sr5_3\ * \TIA_1:sr5_0\ * 
+              Net_31_1
+            + \TIA_1:sr5_4\ * !\TIA_1:sr5_cnt\
+            + \TIA_1:sr5_4_split\
+        );
+        Output = \TIA_1:sr5_4\ (fanout=4)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\TIA_1:sr4_cnt\, Mode=(Combinatorial) @ [UDB=(0,0)][LB=0][MC=1]
+        Total # of inputs        : 8
+        Total # of product terms : 3
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        (
+              !\TIA_1:sr5_4\ * \TIA_1:sr5_cnt\ * !\TIA_1:sr5_3\ * 
+              !\TIA_1:sr5_2\ * \TIA_1:sr5_1\ * !Net_31_0
+            + \TIA_1:sr5_cnt\ * \TIA_1:sr5_0\ * Net_31_0
+            + \TIA_1:sr5_cnt\ * !Net_31_1
+        );
+        Output = \TIA_1:sr4_cnt\ (fanout=4)
+        Properties               : 
+        {
+            soft = 1
+        }
+
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(0,0)][LB=1] #macrocells=3, #inputs=6, #pterms=6
+{
+    [McSlotId=0]:     MacroCell: Name=\TIA_1:sr5_3\, Mode=(T-Register) @ [UDB=(0,0)][LB=1][MC=0]
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_75 * !\TIA_1:sr5_4\ * \TIA_1:sr5_cnt\ * \TIA_1:sr5_3\
+            + Net_75 * \TIA_1:sr5_4\ * \TIA_1:sr5_cnt\ * !\TIA_1:sr5_3\
+        );
+        Output = \TIA_1:sr5_3\ (fanout=5)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\TIA_1:sr5_2\, Mode=(T-Register) @ [UDB=(0,0)][LB=1][MC=1]
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_75 * \TIA_1:sr5_cnt\ * !\TIA_1:sr5_3\ * \TIA_1:sr5_2\
+            + Net_75 * \TIA_1:sr5_cnt\ * \TIA_1:sr5_3\ * !\TIA_1:sr5_2\
+        );
+        Output = \TIA_1:sr5_2\ (fanout=4)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\TIA_1:sr5_1\, Mode=(T-Register) @ [UDB=(0,0)][LB=1][MC=2]
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_75 * \TIA_1:sr5_cnt\ * !\TIA_1:sr5_2\ * \TIA_1:sr5_1\
+            + Net_75 * \TIA_1:sr5_cnt\ * \TIA_1:sr5_2\ * !\TIA_1:sr5_1\
+        );
+        Output = \TIA_1:sr5_1\ (fanout=4)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+UDB [UDB=(0,1)] contents:
+LAB@[UDB=(0,1)][LB=0] #macrocells=1, #inputs=12, #pterms=8
+{
+    [McSlotId=0]:     MacroCell: Name=\TIA_1:sr5_4_split\, Mode=(Combinatorial) @ [UDB=(0,1)][LB=0][MC=0]
+        Total # of inputs        : 12
+        Total # of product terms : 8
+            Clock Enable: True
+        Main Equation            : 8 pterms
+        (
+              Net_75 * !\TIA_1:sr5_4\ * \TIA_1:sr5_cnt\ * !\TIA_1:sr5_2\ * 
+              !\TIA_1:sr5_1\ * !\TIA_1:sr5_0\ * Net_31_1
+            + Net_75 * !\TIA_1:sr5_4\ * \TIA_1:sr5_cnt\ * !\TIA_1:sr5_2\ * 
+              !\TIA_1:sr5_1\ * !\TIA_1:sr5_0\ * Net_31_0
+            + Net_75 * \TIA_1:sr5_cnt\ * !\TIA_1:sr5_3\ * \TIA_1:sr5_0\ * 
+              Net_31_0
+            + Net_75 * \TIA_1:sr5_cnt\ * \TIA_1:sr5_3\ * !\TIA_1:sr5_0\ * 
+              Net_31_1
+            + Net_75 * \TIA_1:sr5_cnt\ * \TIA_1:sr5_3\ * !\TIA_1:sr5_0\ * 
+              Net_31_0
+            + Net_75 * \TIA_1:sr5_cnt\ * !\TIA_1:sr5_0\ * !Net_31_1 * 
+              !Net_31_0 * Net_41
+            + Net_75 * \TIA_1:sr5_cnt\ * \TIA_1:sr5_0\ * !Net_31_1 * 
+              !Net_31_0 * !Net_41
+            + Net_75 * \TIA_1:sr5_cnt\ * !Net_31_3 * !Net_31_2 * !Net_31_1 * 
+              !Net_31_0
+        );
+        Output = \TIA_1:sr5_4_split\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(0,1)][LB=1] #macrocells=1, #inputs=11, #pterms=8
+{
+    [McSlotId=0]:     MacroCell: Name=\TIA_1:sr4_3\, Mode=(D-Register) @ [UDB=(0,1)][LB=1][MC=0]
+        Total # of inputs        : 11
+        Total # of product terms : 8
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 8 pterms
+        (
+              !Net_75 * \TIA_1:sr4_3\
+            + Net_75 * !\TIA_1:sr4_3\ * \TIA_1:sr4_cnt\ * !Net_31_3 * 
+              Net_31_2
+            + Net_75 * \TIA_1:sr4_cnt\ * !\TIA_1:sr4_1\ * Net_31_3 * Net_31_2
+            + Net_75 * \TIA_1:sr4_cnt\ * \TIA_1:sr5_0\ * Net_31_3 * !Net_31_2
+            + Net_75 * \TIA_1:sr4_cnt\ * !Net_31_3 * !Net_31_2 * !Net_31_1 * 
+              !Net_31_0
+            + \TIA_1:sr4_3\ * !\TIA_1:sr4_cnt\
+            + \TIA_1:sr4_3\ * !\TIA_1:sr4_2\ * Net_31_3 * Net_31_2
+            + \TIA_1:sr4_3\ * \TIA_1:sr4_2\ * \TIA_1:sr4_1\ * !Net_31_3 * 
+              !Net_31_2 * Net_41
+        );
+        Output = \TIA_1:sr4_3\ (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+controlcell: Name =\AUDC:Sync:ctrl_reg\
+    PORT MAP (
+        control_7 => \AUDC:control_7\ ,
+        control_6 => \AUDC:control_6\ ,
+        control_5 => \AUDC:control_5\ ,
+        control_4 => \AUDC:control_4\ ,
+        control_3 => Net_31_3 ,
+        control_2 => Net_31_2 ,
+        control_1 => Net_31_1 ,
+        control_0 => Net_31_0 );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "00000000"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000100"
+    }
+    Clock Enable: True
+
+UDB [UDB=(1,0)] contents:
+LAB@[UDB=(1,0)][LB=0] #macrocells=1, #inputs=10, #pterms=8
+{
+    [McSlotId=0]:     MacroCell: Name=\TIA_1:sr5_cnt_split\, Mode=(Combinatorial) @ [UDB=(1,0)][LB=0][MC=0]
+        Total # of inputs        : 10
+        Total # of product terms : 8
+            Clock Enable: True
+        Main Equation            : 8 pterms
+        (
+              \TIA_1:dvdr_4\ * !Net_32_4
+            + \TIA_1:dvdr_3\ * !Net_32_3
+            + !\TIA_1:dvdr_2\ * Net_32_2
+            + \TIA_1:dvdr_2\ * !Net_32_2
+            + !\TIA_1:dvdr_1\ * Net_32_1
+            + \TIA_1:dvdr_1\ * !Net_32_1
+            + !\TIA_1:dvdr_0\ * Net_32_0
+            + \TIA_1:dvdr_0\ * !Net_32_0
+        );
+        Output = \TIA_1:sr5_cnt_split\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(1,0)][LB=1] #macrocells=3, #inputs=10, #pterms=7
+{
+    [McSlotId=0]:     MacroCell: Name=\TIA_1:dvdr_4\, Mode=(T-Register) @ [UDB=(1,0)][LB=1][MC=0]
+        Total # of inputs        : 7
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_75 * !\TIA_1:sr5_cnt\ * \TIA_1:dvdr_3\ * \TIA_1:dvdr_2\ * 
+              \TIA_1:dvdr_1\ * \TIA_1:dvdr_0\
+            + Net_75 * \TIA_1:sr5_cnt\ * !\TIA_1:dvdr_4\
+        );
+        Output = \TIA_1:dvdr_4\ (fanout=3)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\TIA_1:sr5_cnt\, Mode=(Combinatorial) @ [UDB=(1,0)][LB=1][MC=1]
+        Total # of inputs        : 5
+        Total # of product terms : 3
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        !(
+              !\TIA_1:dvdr_4\ * Net_32_4
+            + !\TIA_1:dvdr_3\ * Net_32_3
+            + \TIA_1:sr5_cnt_split\
+        );
+        Output = \TIA_1:sr5_cnt\ (fanout=12)
+        Properties               : 
+        {
+            soft = 1
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\TIA_1:dvdr_3\, Mode=(T-Register) @ [UDB=(1,0)][LB=1][MC=2]
+        Total # of inputs        : 6
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_75 * !\TIA_1:sr5_cnt\ * \TIA_1:dvdr_2\ * \TIA_1:dvdr_1\ * 
+              \TIA_1:dvdr_0\
+            + Net_75 * \TIA_1:sr5_cnt\ * \TIA_1:dvdr_3\
+        );
+        Output = \TIA_1:dvdr_3\ (fanout=4)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+controlcell: Name =\AUDF:Sync:ctrl_reg\
+    PORT MAP (
+        control_7 => \AUDF:control_7\ ,
+        control_6 => \AUDF:control_6\ ,
+        control_5 => \AUDF:control_5\ ,
+        control_4 => Net_32_4 ,
+        control_3 => Net_32_3 ,
+        control_2 => Net_32_2 ,
+        control_1 => Net_32_1 ,
+        control_0 => Net_32_0 );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "00000000"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00010000"
+    }
+    Clock Enable: True
+
+UDB [UDB=(1,1)] contents:
+LAB@[UDB=(1,1)][LB=0] #macrocells=4, #inputs=7, #pterms=8
+{
+    [McSlotId=0]:     MacroCell: Name=\TIA_1:dvdr_2\, Mode=(T-Register) @ [UDB=(1,1)][LB=0][MC=0]
+        Total # of inputs        : 5
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_75 * !\TIA_1:sr5_cnt\ * \TIA_1:dvdr_1\ * \TIA_1:dvdr_0\
+            + Net_75 * \TIA_1:sr5_cnt\ * \TIA_1:dvdr_2\
+        );
+        Output = \TIA_1:dvdr_2\ (fanout=4)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\TIA_1:dvdr_1\, Mode=(T-Register) @ [UDB=(1,1)][LB=0][MC=1]
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_75 * !\TIA_1:sr5_cnt\ * \TIA_1:dvdr_0\
+            + Net_75 * \TIA_1:sr5_cnt\ * \TIA_1:dvdr_1\
+        );
+        Output = \TIA_1:dvdr_1\ (fanout=5)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\TIA_1:dvdr_0\, Mode=(D-Register) @ [UDB=(1,1)][LB=0][MC=2]
+        Total # of inputs        : 3
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !Net_75 * \TIA_1:dvdr_0\
+            + Net_75 * !\TIA_1:sr5_cnt\ * !\TIA_1:dvdr_0\
+        );
+        Output = \TIA_1:dvdr_0\ (fanout=6)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=\TIA_1:sr5_0\, Mode=(T-Register) @ [UDB=(1,1)][LB=0][MC=3]
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_75 * \TIA_1:sr5_cnt\ * !\TIA_1:sr5_1\ * \TIA_1:sr5_0\
+            + Net_75 * \TIA_1:sr5_cnt\ * \TIA_1:sr5_1\ * !\TIA_1:sr5_0\
+        );
+        Output = \TIA_1:sr5_0\ (fanout=5)
+        Properties               : 
+        {
+        }
+}
+
+LAB@[UDB=(1,1)][LB=1] #macrocells=3, #inputs=6, #pterms=6
+{
+    [McSlotId=0]:     MacroCell: Name=\TIA_1:sr4_2\, Mode=(T-Register) @ [UDB=(1,1)][LB=1][MC=0]
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_75 * !\TIA_1:sr4_3\ * \TIA_1:sr4_cnt\ * \TIA_1:sr4_2\
+            + Net_75 * \TIA_1:sr4_3\ * \TIA_1:sr4_cnt\ * !\TIA_1:sr4_2\
+        );
+        Output = \TIA_1:sr4_2\ (fanout=3)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=Net_41, Mode=(T-Register) @ [UDB=(1,1)][LB=1][MC=1]
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_75 * \TIA_1:sr4_cnt\ * !\TIA_1:sr4_1\ * Net_41
+            + Net_75 * \TIA_1:sr4_cnt\ * \TIA_1:sr4_1\ * !Net_41
+        );
+        Output = Net_41 (fanout=4)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\TIA_1:sr4_1\, Mode=(T-Register) @ [UDB=(1,1)][LB=1][MC=2]
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_75)
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              Net_75 * \TIA_1:sr4_cnt\ * !\TIA_1:sr4_2\ * \TIA_1:sr4_1\
+            + Net_75 * \TIA_1:sr4_cnt\ * \TIA_1:sr4_2\ * !\TIA_1:sr4_1\
+        );
+        Output = \TIA_1:sr4_1\ (fanout=3)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+Intr container @ [IntrContainer=(0)]: 
+  Intr@ [IntrContainer=(0)][IntrId=(14)] 
+    interrupt: Name =\ADC_SAR_Seq_1:IRQ\
+        PORT MAP (
+            interrupt => \ADC_SAR_Seq_1:Net_3112\ );
+        Properties:
+        {
+            int_type = "10"
+            is_nmi = 0
+        }
+Port 0 contains the following IO cells:
+[IoId=0]: 
+Pin : Name = Pin_6(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: SYNC
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: CMOS_OUT
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: True
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL, ROUTABLE
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => Pin_6(0)__PA ,
+        pad => Pin_6(0)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=4]: 
+Pin : Name = Pin_5(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: NOSYNC
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: CMOS_OUT
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL, ROUTABLE
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => Pin_5(0)__PA ,
+        input => Net_41 ,
+        pad => Pin_5(0)_PAD );
+    Properties:
+    {
+    }
+
+Port 1 is empty
+Port 2 contains the following IO cells:
+[IoId=0]: 
+Pin : Name = Pin_1(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_ANALOG
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: True
+        Can contain Digital: False
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: ANALOG
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => Pin_1(0)__PA ,
+        analog_term => Net_25 ,
+        pad => Pin_1(0)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=5]: 
+Pin : Name = Pin_4(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_ANALOG
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: True
+        Can contain Digital: False
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: ANALOG
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => Pin_4(0)__PA ,
+        analog_term => Net_19 ,
+        pad => Pin_4(0)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=6]: 
+Pin : Name = Pin_3(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_ANALOG
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: True
+        Can contain Digital: False
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: ANALOG
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => Pin_3(0)__PA ,
+        analog_term => Net_21 ,
+        pad => Pin_3(0)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=7]: 
+Pin : Name = Pin_2(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_ANALOG
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: True
+        Can contain Digital: False
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: ANALOG
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => Pin_2(0)__PA ,
+        analog_term => Net_23 ,
+        pad => Pin_2(0)_PAD );
+    Properties:
+    {
+    }
+
+Port 3 contains the following IO cells:
+[IoId=6]: 
+Pin : Name = Pin_8(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: NOSYNC
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_DIGITAL
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL, ROUTABLE
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => Pin_8(0)__PA ,
+        fb => Net_75 ,
+        pad => Pin_8(0)_PAD );
+    Properties:
+    {
+    }
+
+Port 4 is empty
+ARM group 0: empty
+Clock group 0: 
+    Clock Block @ F(Clock,0): 
+    m0s8clockblockcell: Name =ClockBlock
+        PORT MAP (
+            hfclk => ClockBlock_HFCLK ,
+            imo => ClockBlock_IMO ,
+            ext => ClockBlock_EXTCLK ,
+            sysclk => ClockBlock_SYSCLK ,
+            ilo => ClockBlock_ILO ,
+            lfclk => ClockBlock_LFCLK ,
+            dsi_in_0 => ClockBlock_Routed1 ,
+            ff_div_7 => \ADC_SAR_Seq_1:Net_1845_ff7\ ,
+            udb_div_0 => dclk_to_genclk );
+        Properties:
+        {
+        }
+PM group 0: empty
+SPC group 0: empty
+WDT group 0: empty
+FSS group 0: empty
+LP Comparator group 0: empty
+Serial Communication (SCB) group 0: empty
+CapSense group 0: empty
+8-bit IDAC group 0: empty
+7-bit IDAC group 0: empty
+Timer/Counter/PWM group 0: empty
+Comparator/Opamp group 0: empty
+Die Temp group 0: empty
+SAR ADC group 0: 
+    PSoC4 SAR ADC @ F(SARADC,0): 
+    p4sarcell: Name =\ADC_SAR_Seq_1:cy_psoc4_sar\
+        PORT MAP (
+            vplus => \ADC_SAR_Seq_1:muxout_plus\ ,
+            vminus => \ADC_SAR_Seq_1:muxout_minus\ ,
+            vref => \ADC_SAR_Seq_1:Net_3113\ ,
+            ext_vref => \ADC_SAR_Seq_1:Net_3225\ ,
+            clock => \ADC_SAR_Seq_1:Net_1845_ff7\ ,
+            sample_done => Net_15 ,
+            chan_id_valid => \ADC_SAR_Seq_1:Net_3108\ ,
+            chan_id_3 => \ADC_SAR_Seq_1:Net_3109_3\ ,
+            chan_id_2 => \ADC_SAR_Seq_1:Net_3109_2\ ,
+            chan_id_1 => \ADC_SAR_Seq_1:Net_3109_1\ ,
+            chan_id_0 => \ADC_SAR_Seq_1:Net_3109_0\ ,
+            data_valid => \ADC_SAR_Seq_1:Net_3110\ ,
+            data_11 => \ADC_SAR_Seq_1:Net_3111_11\ ,
+            data_10 => \ADC_SAR_Seq_1:Net_3111_10\ ,
+            data_9 => \ADC_SAR_Seq_1:Net_3111_9\ ,
+            data_8 => \ADC_SAR_Seq_1:Net_3111_8\ ,
+            data_7 => \ADC_SAR_Seq_1:Net_3111_7\ ,
+            data_6 => \ADC_SAR_Seq_1:Net_3111_6\ ,
+            data_5 => \ADC_SAR_Seq_1:Net_3111_5\ ,
+            data_4 => \ADC_SAR_Seq_1:Net_3111_4\ ,
+            data_3 => \ADC_SAR_Seq_1:Net_3111_3\ ,
+            data_2 => \ADC_SAR_Seq_1:Net_3111_2\ ,
+            data_1 => \ADC_SAR_Seq_1:Net_3111_1\ ,
+            data_0 => \ADC_SAR_Seq_1:Net_3111_0\ ,
+            eos_intr => Net_16 ,
+            irq => \ADC_SAR_Seq_1:Net_3112\ );
+        Properties:
+        {
+            cy_registers = ""
+        }
+Segment LCD group 0: empty
+CLK_GEN group 0: 
+    M0S8 Clock Gen Block @ F(CLK_GEN,0): 
+    m0s8clockgenblockcell: Name =ClockGenBlock
+        PORT MAP (
+            gen_clk_out_0 => Net_83_digital ,
+            gen_clk_in_0 => dclk_to_genclk );
+        Properties:
+        {
+        }
+LPCOMPBLOCK group 0: empty
+PASSBLOCK group 0: empty
+ANAPUMP group 0: empty
+WCO group 0: empty
+
+Blocks not positioned by the digital component placer:
+    PSoC4 SAR Muxes @ <No Location>: 
+    p4sarmuxcell: Name =\ADC_SAR_Seq_1:cy_psoc4_sarmux_8\
+        PORT MAP (
+            muxin_plus_3 => Net_19 ,
+            muxin_plus_2 => Net_21 ,
+            muxin_plus_1 => Net_23 ,
+            muxin_plus_0 => Net_25 ,
+            muxin_minus_3 => \ADC_SAR_Seq_1:mux_bus_minus_3\ ,
+            muxin_minus_2 => \ADC_SAR_Seq_1:mux_bus_minus_2\ ,
+            muxin_minus_1 => \ADC_SAR_Seq_1:mux_bus_minus_1\ ,
+            muxin_minus_0 => \ADC_SAR_Seq_1:mux_bus_minus_0\ ,
+            cmn_neg_0 => \ADC_SAR_Seq_1:Net_1851\ ,
+            vout_plus => \ADC_SAR_Seq_1:muxout_plus\ ,
+            vout_minus => \ADC_SAR_Seq_1:muxout_minus\ );
+        Properties:
+        {
+            cy_registers = ""
+            input_mode = "0000"
+            muxin_width = 4
+        }
+</CYPRESSTAG>
+<CYPRESSTAG name="Port Configuration Details">
+
+------------------------------------------------------------
+Port Configuration report
+------------------------------------------------------------
+     |     |       | Interrupt |                  |          | 
+Port | Pin | Fixed |      Type |       Drive Mode |     Name | Connections
+-----+-----+-------+-----------+------------------+----------+---------------
+   0 |   0 |       |      NONE |         CMOS_OUT | Pin_6(0) | 
+     |   4 |       |      NONE |         CMOS_OUT | Pin_5(0) | In(Net_41)
+-----+-----+-------+-----------+------------------+----------+---------------
+   2 |   0 |       |      NONE |      HI_Z_ANALOG | Pin_1(0) | Analog(Net_25)
+     |   5 |       |      NONE |      HI_Z_ANALOG | Pin_4(0) | Analog(Net_19)
+     |   6 |       |      NONE |      HI_Z_ANALOG | Pin_3(0) | Analog(Net_21)
+     |   7 |       |      NONE |      HI_Z_ANALOG | Pin_2(0) | Analog(Net_23)
+-----+-----+-------+-----------+------------------+----------+---------------
+   3 |   6 |       |      NONE |     HI_Z_DIGITAL | Pin_8(0) | FB(Net_75)
+-----------------------------------------------------------------------------
+</CYPRESSTAG>
+</CYPRESSTAG>
+</CYPRESSTAG>
+Digital component placer commit/Report: Elapsed time ==> 0s.001ms
+Digital Placement phase: Elapsed time ==> 1s.337ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Digital Routing">
+Routing successful.
+Digital Routing phase: Elapsed time ==> 1s.052ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Bitstream Generation">
+Bitstream Generation phase: Elapsed time ==> 0s.160ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Bitstream Verification">
+Bitstream Verification phase: Elapsed time ==> 0s.023ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Static timing analysis">
+Warning: sta.M0021: TIA_timing.html: Warning-1350: Asynchronous path(s) exist from "CyHFCLK" to "Pin_8(0)_PAD". See the timing report for details. (File=C:\Users\214016586\Documents\GitHub\PSoC_TIA\TIA\TIA.cydsn\TIA_timing.html)
+Warning: sta.M0019: TIA_timing.html: Warning-1367: Hold time violation found in a path from clock ( Pin_8(0)_PAD ) to clock ( Pin_8(0)_PAD ). (File=C:\Users\214016586\Documents\GitHub\PSoC_TIA\TIA\TIA.cydsn\TIA_timing.html)
+Timing report is in TIA_timing.html.
+Static timing analysis phase: Elapsed time ==> 0s.482ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Data reporting">
+Data reporting phase: Elapsed time ==> 0s.000ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Database update...">
+Design database save phase: Elapsed time ==> 0s.163ms
+</CYPRESSTAG>
+cydsfit: Elapsed time ==> 3s.950ms
+</CYPRESSTAG>
+Fitter phase: Elapsed time ==> 3s.952ms
+API generation phase: Elapsed time ==> 1s.119ms
+Dependency generation phase: Elapsed time ==> 0s.016ms
+Cleanup phase: Elapsed time ==> 0s.003ms

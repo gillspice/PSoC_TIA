@@ -1,0 +1,5 @@
+C:\Users\214016586\Documents\GitHub\PSoC_TIA\TIA\TIA.cydsn\TIA.cyprj|8ea9011e-e828-4243-9cc1-c85f76e1fca0
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|f42fd311-bef8-46ad-85f9-da083f1f0c59
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|6b6db788-e9ff-43bd-bd46-cb9d818ad93f
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|9acd57f5-acd2-461c-afe8-5c116108f321
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|9b0d80d5-1c7e-4f79-8290-e52af2676a81

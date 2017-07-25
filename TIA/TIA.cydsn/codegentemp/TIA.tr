@@ -1,0 +1,3411 @@
+##################################################################### 
+                    Table of Contents
+===================================================================== 
+	1::Clock Frequency Summary
+	2::Clock Relationship Summary
+	3::Datasheet Report
+		3.1::Setup to Clock
+		3.2::Clock to Out
+		3.3::Pad to Pad
+	4::Path Details for Clock Frequency Summary
+		4.1::Critical Path Report for Pin_8(0)_PAD
+	5::Path Details for Clock Relationship Summary
+		5.1::Critical Path Report for (CyHFCLK:R vs. Pin_8(0)_PAD:R)
+		5.2::Critical Path Report for (Pin_8(0)_PAD:R vs. Pin_8(0)_PAD:R)
+		5.3::Critical Path Report for (Pin_8(0)_PAD:F vs. Pin_8(0)_PAD:R)
+===================================================================== 
+                    End of Table of Contents
+##################################################################### 
+
+##################################################################### 
+                    1::Clock Frequency Summary
+===================================================================== 
+Number of clocks: 10
+Clock: ADC_SAR_Seq_1_intClock       | N/A                   | Target: 4.00 MHz    | 
+Clock: ADC_SAR_Seq_1_intClock(FFB)  | N/A                   | Target: 4.00 MHz    | 
+Clock: Clock_2                      | N/A                   | Target: 0.03 MHz    | 
+Clock: CyHFCLK                      | N/A                   | Target: 24.00 MHz   | 
+Clock: CyILO                        | N/A                   | Target: 0.03 MHz    | 
+Clock: CyIMO                        | N/A                   | Target: 24.00 MHz   | 
+Clock: CyLFCLK                      | N/A                   | Target: 0.03 MHz    | 
+Clock: CyRouted1                    | N/A                   | Target: 24.00 MHz   | 
+Clock: CySYSCLK                     | N/A                   | Target: 24.00 MHz   | 
+Clock: Pin_8(0)_PAD                 | Frequency: 32.47 MHz  | Target: 100.00 MHz  | 
+
+ =====================================================================
+                    End of Clock Frequency Summary
+ #####################################################################
+
+
+ #####################################################################
+                    2::Clock Relationship Summary
+ =====================================================================
+
+Launch Clock  Capture Clock  Constraint(R-R)  Slack(R-R)  Constraint(R-F)  Slack(R-F)  Constraint(F-F)  Slack(F-F)  Constraint(F-R)  Slack(F-R)  
+------------  -------------  ---------------  ----------  ---------------  ----------  ---------------  ----------  ---------------  ----------  
+CyHFCLK       Pin_8(0)_PAD   1666.67          -7763       N/A              N/A         N/A              N/A         N/A              N/A         
+Pin_8(0)_PAD  Pin_8(0)_PAD   10000            -20796      N/A              N/A         N/A              N/A         5000             -4685       
+
+ =====================================================================
+                    End of Clock Relationship Summary
+ #####################################################################
+
+
+ #####################################################################
+                    3::Datasheet Report
+
+All values are in Picoseconds
+ =====================================================================
+
+3.1::Setup to Clock                     
+-------------------                     
+
+Port Name     Setup to Clk  Clock Name:Phase  
+------------  ------------  ----------------  
+Pin_8(0)_PAD  9685          Pin_8(0)_PAD:R    
+
+
+                       3.2::Clock to Out
+                       -----------------
+
+Port Name     Clock to Out  Clock Name:Phase  
+------------  ------------  ----------------  
+Pin_5(0)_PAD  45214         Pin_8(0)_PAD:R    
+
+
+                         3.3::Pad to Pad
+                         ---------------
+
+Port Name (Source)  Port Name (Destination)  Delay  
+------------------  -----------------------  -----  
+
+===================================================================== 
+                    End of Datasheet Report
+##################################################################### 
+##################################################################### 
+                    4::Path Details for Clock Frequency Summary
+===================================================================== 
+4.1::Critical Path Report for Pin_8(0)_PAD
+******************************************
+Clock: Pin_8(0)_PAD
+Frequency: 32.47 MHz | Target: 100.00 MHz
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_3\/q
+Path End       : \TIA_1:sr4_3\/main_2
+Capture Clock  : \TIA_1:sr4_3\/clock_0
+Path slack     : -20796p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17802
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24292
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      21956
++ Data path delay                       23133
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           45089
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  21956  RISE       1
+
+Data path
+pin name                      model name   delay     AT   slack  edge  Fanout
+----------------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_3\/q              macrocell15   1250  23206  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/main_1  macrocell1    3446  26652  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/q       macrocell1    3350  30002  -20796  RISE       1
+\TIA_1:sr5_cnt\/main_4        macrocell2    2225  32227  -20796  RISE       1
+\TIA_1:sr5_cnt\/q             macrocell2    3350  35577  -20796  RISE       1
+\TIA_1:sr4_cnt\/main_1        macrocell3    3142  38719  -20796  RISE       1
+\TIA_1:sr4_cnt\/q             macrocell3    3350  42069  -20796  RISE       1
+\TIA_1:sr4_3\/main_2          macrocell5    3020  45089  -20796  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr4_3\/clock_0                             macrocell5    7136  17802  RISE       1
+
+
+
+===================================================================== 
+                    End of Path Details for Clock Frequency Summary
+##################################################################### 
+
+
+##################################################################### 
+                    5::Path Details for Clock Relationship Summary
+===================================================================== 
+
+5.1::Critical Path Report for (CyHFCLK:R vs. Pin_8(0)_PAD:R)
+************************************************************
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \AUDF:Sync:ctrl_reg\/control_4
+Path End       : \TIA_1:sr4_3\/main_2
+Capture Clock  : \TIA_1:sr4_3\/clock_0
+Path slack     : -7763p
+
+Capture Clock Arrival Time                               0
++ Clock path delay                                   17802
++ Cycle adjust (CyHFCLK:R#6 vs. Pin_8(0)_PAD:R#22)    1667
+- Setup time                                         -3510
+--------------------------------------------------   ----- 
+End-of-path required time (ps)                       15959
+
+Launch Clock Arrival Time                       0
++ Clock path delay                          0
++ Data path delay                       23722
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           23722
+ 
+Launch Clock Path
+pin name                                              model name          delay     AT  edge  Fanout
+----------------------------------------------------  ------------------  -----  -----  ----  ------
+ClockBlock/hfclk                                      m0s8clockblockcell      0      0  RISE       1
+\AUDF:Sync:ctrl_reg\/busclk                           controlcell1            0      0  RISE       1
+
+Data path
+pin name                        model name    delay     AT  slack  edge  Fanout
+------------------------------  ------------  -----  -----  -----  ----  ------
+\AUDF:Sync:ctrl_reg\/control_4  controlcell1   2580   2580  -7763  RISE       1
+\TIA_1:sr5_cnt_split\/main_5    macrocell1     2705   5285  -7763  RISE       1
+\TIA_1:sr5_cnt_split\/q         macrocell1     3350   8635  -7763  RISE       1
+\TIA_1:sr5_cnt\/main_4          macrocell2     2225  10860  -7763  RISE       1
+\TIA_1:sr5_cnt\/q               macrocell2     3350  14210  -7763  RISE       1
+\TIA_1:sr4_cnt\/main_1          macrocell3     3142  17352  -7763  RISE       1
+\TIA_1:sr4_cnt\/q               macrocell3     3350  20702  -7763  RISE       1
+\TIA_1:sr4_3\/main_2            macrocell5     3020  23722  -7763  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr4_3\/clock_0                             macrocell5    7136  17802  RISE       1
+
+
+5.2::Critical Path Report for (Pin_8(0)_PAD:R vs. Pin_8(0)_PAD:R)
+*****************************************************************
+
+++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_3\/q
+Path End       : \TIA_1:sr4_3\/main_2
+Capture Clock  : \TIA_1:sr4_3\/clock_0
+Path slack     : -20796p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17802
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24292
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      21956
++ Data path delay                       23133
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           45089
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  21956  RISE       1
+
+Data path
+pin name                      model name   delay     AT   slack  edge  Fanout
+----------------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_3\/q              macrocell15   1250  23206  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/main_1  macrocell1    3446  26652  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/q       macrocell1    3350  30002  -20796  RISE       1
+\TIA_1:sr5_cnt\/main_4        macrocell2    2225  32227  -20796  RISE       1
+\TIA_1:sr5_cnt\/q             macrocell2    3350  35577  -20796  RISE       1
+\TIA_1:sr4_cnt\/main_1        macrocell3    3142  38719  -20796  RISE       1
+\TIA_1:sr4_cnt\/q             macrocell3    3350  42069  -20796  RISE       1
+\TIA_1:sr4_3\/main_2          macrocell5    3020  45089  -20796  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr4_3\/clock_0                             macrocell5    7136  17802  RISE       1
+
+
+5.3::Critical Path Report for (Pin_8(0)_PAD:F vs. Pin_8(0)_PAD:R)
+*****************************************************************
+
+++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : Pin_8(0)_PAD
+Path End       : \TIA_1:sr5_4\/main_6
+Capture Clock  : \TIA_1:sr5_4\/clock_0
+Path slack     : -4685p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       20087
++ Cycle adjust (Pin_8(0)_PAD:F#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26577
+
+Launch Clock Arrival Time                    5000
++ Clock path delay                          0
++ Data path delay                       26262
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           31262
+ 
+Data path
+pin name                    model name   delay     AT  slack  edge  Fanout
+--------------------------  -----------  -----  -----  -----  ----  ------
+Pin_8(0)_PAD                TIA              0   5000   COMP  FALL       1
+Pin_8(0)/pad_in             iocell7          0   5000   COMP  FALL       1
+Pin_8(0)/fb                 iocell7      12937  17937   COMP  FALL       1
+\TIA_1:sr5_4_split\/main_0  macrocell4    7093  25030  -4685  FALL       1
+\TIA_1:sr5_4_split\/q       macrocell4    3350  28380  -4685  FALL       1
+\TIA_1:sr5_4\/main_6        macrocell9    2881  31262  -4685  FALL       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr5_4\/clock_0                             macrocell9    9421  20087  RISE       1
+
+
+
+===================================================================== 
+                    End of Path Details for Clock Relationship Summary
+##################################################################### 
+
+##################################################################### 
+                    Detailed Report for all timing paths 
+===================================================================== 
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_3\/q
+Path End       : \TIA_1:sr4_3\/main_2
+Capture Clock  : \TIA_1:sr4_3\/clock_0
+Path slack     : -20796p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17802
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24292
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      21956
++ Data path delay                       23133
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           45089
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  21956  RISE       1
+
+Data path
+pin name                      model name   delay     AT   slack  edge  Fanout
+----------------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_3\/q              macrocell15   1250  23206  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/main_1  macrocell1    3446  26652  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/q       macrocell1    3350  30002  -20796  RISE       1
+\TIA_1:sr5_cnt\/main_4        macrocell2    2225  32227  -20796  RISE       1
+\TIA_1:sr5_cnt\/q             macrocell2    3350  35577  -20796  RISE       1
+\TIA_1:sr4_cnt\/main_1        macrocell3    3142  38719  -20796  RISE       1
+\TIA_1:sr4_cnt\/q             macrocell3    3350  42069  -20796  RISE       1
+\TIA_1:sr4_3\/main_2          macrocell5    3020  45089  -20796  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr4_3\/clock_0                             macrocell5    7136  17802  RISE       1
+
+
+
+++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_3\/q
+Path End       : \TIA_1:sr4_2\/main_2
+Capture Clock  : \TIA_1:sr4_2\/clock_0
+Path slack     : -20644p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      21956
++ Data path delay                       23138
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           45094
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  21956  RISE       1
+
+Data path
+pin name                      model name   delay     AT   slack  edge  Fanout
+----------------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_3\/q              macrocell15   1250  23206  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/main_1  macrocell1    3446  26652  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/q       macrocell1    3350  30002  -20796  RISE       1
+\TIA_1:sr5_cnt\/main_4        macrocell2    2225  32227  -20796  RISE       1
+\TIA_1:sr5_cnt\/q             macrocell2    3350  35577  -20796  RISE       1
+\TIA_1:sr4_cnt\/main_1        macrocell3    3142  38719  -20796  RISE       1
+\TIA_1:sr4_cnt\/q             macrocell3    3350  42069  -20796  RISE       1
+\TIA_1:sr4_2\/main_2          macrocell6    3026  45094  -20644  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr4_2\/clock_0                             macrocell6    7294  17960  RISE       1
+
+
+
+++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_3\/q
+Path End       : \TIA_1:sr4_1\/main_1
+Capture Clock  : \TIA_1:sr4_1\/clock_0
+Path slack     : -20644p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      21956
++ Data path delay                       23138
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           45094
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  21956  RISE       1
+
+Data path
+pin name                      model name   delay     AT   slack  edge  Fanout
+----------------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_3\/q              macrocell15   1250  23206  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/main_1  macrocell1    3446  26652  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/q       macrocell1    3350  30002  -20796  RISE       1
+\TIA_1:sr5_cnt\/main_4        macrocell2    2225  32227  -20796  RISE       1
+\TIA_1:sr5_cnt\/q             macrocell2    3350  35577  -20796  RISE       1
+\TIA_1:sr4_cnt\/main_1        macrocell3    3142  38719  -20796  RISE       1
+\TIA_1:sr4_cnt\/q             macrocell3    3350  42069  -20796  RISE       1
+\TIA_1:sr4_1\/main_1          macrocell7    3026  45094  -20644  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr4_1\/clock_0                             macrocell7    7294  17960  RISE       1
+
+
+
+++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_3\/q
+Path End       : Net_41/main_1
+Capture Clock  : Net_41/clock_0
+Path slack     : -20644p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      21956
++ Data path delay                       23138
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           45094
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  21956  RISE       1
+
+Data path
+pin name                      model name   delay     AT   slack  edge  Fanout
+----------------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_3\/q              macrocell15   1250  23206  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/main_1  macrocell1    3446  26652  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/q       macrocell1    3350  30002  -20796  RISE       1
+\TIA_1:sr5_cnt\/main_4        macrocell2    2225  32227  -20796  RISE       1
+\TIA_1:sr5_cnt\/q             macrocell2    3350  35577  -20796  RISE       1
+\TIA_1:sr4_cnt\/main_1        macrocell3    3142  38719  -20796  RISE       1
+\TIA_1:sr4_cnt\/q             macrocell3    3350  42069  -20796  RISE       1
+Net_41/main_1                 macrocell8    3026  45094  -20644  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+Net_41/clock_0                                    macrocell8    7294  17960  RISE       1
+
+
+
+++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_3\/q
+Path End       : \TIA_1:sr5_4\/main_6
+Capture Clock  : \TIA_1:sr5_4\/clock_0
+Path slack     : -19289p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       20087
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26577
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      21956
++ Data path delay                       23910
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           45866
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  21956  RISE       1
+
+Data path
+pin name                      model name   delay     AT   slack  edge  Fanout
+----------------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_3\/q              macrocell15   1250  23206  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/main_1  macrocell1    3446  26652  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/q       macrocell1    3350  30002  -20796  RISE       1
+\TIA_1:sr5_cnt\/main_4        macrocell2    2225  32227  -20796  RISE       1
+\TIA_1:sr5_cnt\/q             macrocell2    3350  35577  -20796  RISE       1
+\TIA_1:sr5_4_split\/main_2    macrocell4    4058  39635  -19289  RISE       1
+\TIA_1:sr5_4_split\/q         macrocell4    3350  42985  -19289  RISE       1
+\TIA_1:sr5_4\/main_6          macrocell9    2881  45866  -19289  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr5_4\/clock_0                             macrocell9    9421  20087  RISE       1
+
+
+
+++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_3\/q
+Path End       : \TIA_1:sr5_0\/main_1
+Capture Clock  : \TIA_1:sr5_0\/clock_0
+Path slack     : -15187p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      21956
++ Data path delay                       17681
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           39637
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  21956  RISE       1
+
+Data path
+pin name                      model name   delay     AT   slack  edge  Fanout
+----------------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_3\/q              macrocell15   1250  23206  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/main_1  macrocell1    3446  26652  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/q       macrocell1    3350  30002  -20796  RISE       1
+\TIA_1:sr5_cnt\/main_4        macrocell2    2225  32227  -20796  RISE       1
+\TIA_1:sr5_cnt\/q             macrocell2    3350  35577  -20796  RISE       1
+\TIA_1:sr5_0\/main_1          macrocell13   4060  39637  -15187  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr5_0\/clock_0                             macrocell13   7294  17960  RISE       1
+
+
+
+++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_3\/q
+Path End       : \TIA_1:dvdr_2\/main_1
+Capture Clock  : \TIA_1:dvdr_2\/clock_0
+Path slack     : -15187p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      21956
++ Data path delay                       17681
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           39637
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  21956  RISE       1
+
+Data path
+pin name                      model name   delay     AT   slack  edge  Fanout
+----------------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_3\/q              macrocell15   1250  23206  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/main_1  macrocell1    3446  26652  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/q       macrocell1    3350  30002  -20796  RISE       1
+\TIA_1:sr5_cnt\/main_4        macrocell2    2225  32227  -20796  RISE       1
+\TIA_1:sr5_cnt\/q             macrocell2    3350  35577  -20796  RISE       1
+\TIA_1:dvdr_2\/main_1         macrocell16   4060  39637  -15187  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_2\/clock_0                            macrocell16   7294  17960  RISE       1
+
+
+
+++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_3\/q
+Path End       : \TIA_1:dvdr_1\/main_1
+Capture Clock  : \TIA_1:dvdr_1\/clock_0
+Path slack     : -15187p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      21956
++ Data path delay                       17681
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           39637
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  21956  RISE       1
+
+Data path
+pin name                      model name   delay     AT   slack  edge  Fanout
+----------------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_3\/q              macrocell15   1250  23206  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/main_1  macrocell1    3446  26652  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/q       macrocell1    3350  30002  -20796  RISE       1
+\TIA_1:sr5_cnt\/main_4        macrocell2    2225  32227  -20796  RISE       1
+\TIA_1:sr5_cnt\/q             macrocell2    3350  35577  -20796  RISE       1
+\TIA_1:dvdr_1\/main_1         macrocell17   4060  39637  -15187  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_1\/clock_0                            macrocell17   7294  17960  RISE       1
+
+
+
+++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_3\/q
+Path End       : \TIA_1:dvdr_0\/main_1
+Capture Clock  : \TIA_1:dvdr_0\/clock_0
+Path slack     : -15187p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      21956
++ Data path delay                       17681
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           39637
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  21956  RISE       1
+
+Data path
+pin name                      model name   delay     AT   slack  edge  Fanout
+----------------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_3\/q              macrocell15   1250  23206  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/main_1  macrocell1    3446  26652  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/q       macrocell1    3350  30002  -20796  RISE       1
+\TIA_1:sr5_cnt\/main_4        macrocell2    2225  32227  -20796  RISE       1
+\TIA_1:sr5_cnt\/q             macrocell2    3350  35577  -20796  RISE       1
+\TIA_1:dvdr_0\/main_1         macrocell18   4060  39637  -15187  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_0\/clock_0                            macrocell18   7294  17960  RISE       1
+
+
+
+++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_3\/q
+Path End       : \TIA_1:dvdr_4\/main_1
+Capture Clock  : \TIA_1:dvdr_4\/clock_0
+Path slack     : -12676p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       19685
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26175
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      21956
++ Data path delay                       16895
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           38851
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  21956  RISE       1
+
+Data path
+pin name                      model name   delay     AT   slack  edge  Fanout
+----------------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_3\/q              macrocell15   1250  23206  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/main_1  macrocell1    3446  26652  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/q       macrocell1    3350  30002  -20796  RISE       1
+\TIA_1:sr5_cnt\/main_4        macrocell2    2225  32227  -20796  RISE       1
+\TIA_1:sr5_cnt\/q             macrocell2    3350  35577  -20796  RISE       1
+\TIA_1:dvdr_4\/main_1         macrocell14   3274  38851  -12676  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_4\/clock_0                            macrocell14   9019  19685  RISE       1
+
+
+
+++++ Path 11 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_3\/q
+Path End       : \TIA_1:dvdr_3\/main_1
+Capture Clock  : \TIA_1:dvdr_3\/clock_0
+Path slack     : -12676p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       19685
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26175
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      21956
++ Data path delay                       16895
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           38851
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  21956  RISE       1
+
+Data path
+pin name                      model name   delay     AT   slack  edge  Fanout
+----------------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_3\/q              macrocell15   1250  23206  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/main_1  macrocell1    3446  26652  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/q       macrocell1    3350  30002  -20796  RISE       1
+\TIA_1:sr5_cnt\/main_4        macrocell2    2225  32227  -20796  RISE       1
+\TIA_1:sr5_cnt\/q             macrocell2    3350  35577  -20796  RISE       1
+\TIA_1:dvdr_3\/main_1         macrocell15   3274  38851  -12676  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  19685  RISE       1
+
+
+
+++++ Path 12 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_3\/q
+Path End       : \TIA_1:sr5_3\/main_2
+Capture Clock  : \TIA_1:sr5_3\/clock_0
+Path slack     : -12275p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       20087
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26577
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      21956
++ Data path delay                       16896
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           38852
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  21956  RISE       1
+
+Data path
+pin name                      model name   delay     AT   slack  edge  Fanout
+----------------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_3\/q              macrocell15   1250  23206  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/main_1  macrocell1    3446  26652  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/q       macrocell1    3350  30002  -20796  RISE       1
+\TIA_1:sr5_cnt\/main_4        macrocell2    2225  32227  -20796  RISE       1
+\TIA_1:sr5_cnt\/q             macrocell2    3350  35577  -20796  RISE       1
+\TIA_1:sr5_3\/main_2          macrocell10   3275  38852  -12275  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr5_3\/clock_0                             macrocell10   9421  20087  RISE       1
+
+
+
+++++ Path 13 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_3\/q
+Path End       : \TIA_1:sr5_2\/main_1
+Capture Clock  : \TIA_1:sr5_2\/clock_0
+Path slack     : -12275p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       20087
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26577
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      21956
++ Data path delay                       16896
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           38852
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  21956  RISE       1
+
+Data path
+pin name                      model name   delay     AT   slack  edge  Fanout
+----------------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_3\/q              macrocell15   1250  23206  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/main_1  macrocell1    3446  26652  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/q       macrocell1    3350  30002  -20796  RISE       1
+\TIA_1:sr5_cnt\/main_4        macrocell2    2225  32227  -20796  RISE       1
+\TIA_1:sr5_cnt\/q             macrocell2    3350  35577  -20796  RISE       1
+\TIA_1:sr5_2\/main_1          macrocell11   3275  38852  -12275  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr5_2\/clock_0                             macrocell11   9421  20087  RISE       1
+
+
+
+++++ Path 14 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_3\/q
+Path End       : \TIA_1:sr5_1\/main_1
+Capture Clock  : \TIA_1:sr5_1\/clock_0
+Path slack     : -12275p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       20087
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26577
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      21956
++ Data path delay                       16896
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           38852
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  21956  RISE       1
+
+Data path
+pin name                      model name   delay     AT   slack  edge  Fanout
+----------------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_3\/q              macrocell15   1250  23206  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/main_1  macrocell1    3446  26652  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/q       macrocell1    3350  30002  -20796  RISE       1
+\TIA_1:sr5_cnt\/main_4        macrocell2    2225  32227  -20796  RISE       1
+\TIA_1:sr5_cnt\/q             macrocell2    3350  35577  -20796  RISE       1
+\TIA_1:sr5_1\/main_1          macrocell12   3275  38852  -12275  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr5_1\/clock_0                             macrocell12   9421  20087  RISE       1
+
+
+
+++++ Path 15 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_3\/q
+Path End       : \TIA_1:sr5_4\/main_2
+Capture Clock  : \TIA_1:sr5_4\/clock_0
+Path slack     : -12142p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       20087
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26577
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      21956
++ Data path delay                       16763
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           38719
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  21956  RISE       1
+
+Data path
+pin name                      model name   delay     AT   slack  edge  Fanout
+----------------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_3\/q              macrocell15   1250  23206  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/main_1  macrocell1    3446  26652  -20796  RISE       1
+\TIA_1:sr5_cnt_split\/q       macrocell1    3350  30002  -20796  RISE       1
+\TIA_1:sr5_cnt\/main_4        macrocell2    2225  32227  -20796  RISE       1
+\TIA_1:sr5_cnt\/q             macrocell2    3350  35577  -20796  RISE       1
+\TIA_1:sr5_4\/main_2          macrocell9    3142  38719  -12142  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr5_4\/clock_0                             macrocell9    9421  20087  RISE       1
+
+
+
+++++ Path 16 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:sr5_1\/q
+Path End       : \TIA_1:sr5_0\/main_2
+Capture Clock  : \TIA_1:sr5_0\/clock_0
+Path slack     : -4213p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      22358
++ Data path delay                        6305
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           28663
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:sr5_1\/clock_0                             macrocell12   9421  22358  RISE       1
+
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+\TIA_1:sr5_1\/q       macrocell12   1250  23608  -8378  RISE       1
+\TIA_1:sr5_0\/main_2  macrocell13   5055  28663  -4213  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr5_0\/clock_0                             macrocell13   7294  17960  RISE       1
+
+
+
+++++ Path 17 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : Net_41/q
+Path End       : \TIA_1:sr4_3\/main_10
+Capture Clock  : \TIA_1:sr4_3\/clock_0
+Path slack     : -1348p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17802
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24292
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20231
++ Data path delay                        5409
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           25640
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+Net_41/clock_0                                    macrocell8    7294  20231  RISE       1
+
+Data path
+pin name               model name   delay     AT  slack  edge  Fanout
+---------------------  -----------  -----  -----  -----  ----  ------
+Net_41/q               macrocell8    1250  21481  -4881  RISE       1
+\TIA_1:sr4_3\/main_10  macrocell5    4159  25640  -1348  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr4_3\/clock_0                             macrocell5    7136  17802  RISE       1
+
+
+
+++++ Path 18 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : Pin_8(0)_PAD
+Path End       : \TIA_1:sr5_4\/main_0
+Capture Clock  : \TIA_1:sr5_4\/clock_0
+Path slack     : -1331p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       20087
++ Cycle adjust (Pin_8(0)_PAD:F#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26577
+
+Launch Clock Arrival Time                    5000
++ Clock path delay                          0
++ Data path delay                       22908
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           27908
+ 
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+Pin_8(0)_PAD          TIA              0   5000   COMP  FALL       1
+Pin_8(0)/pad_in       iocell7          0   5000   COMP  FALL       1
+Pin_8(0)/fb           iocell7      12937  17937   COMP  FALL       1
+\TIA_1:sr5_4\/main_0  macrocell9    9971  27908  -1331  FALL       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr5_4\/clock_0                             macrocell9    9421  20087  RISE       1
+
+
+
+++++ Path 19 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:sr4_3\/q
+Path End       : \TIA_1:sr4_3\/main_1
+Capture Clock  : \TIA_1:sr4_3\/clock_0
+Path slack     : -1229p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17802
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24292
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20073
++ Data path delay                        5448
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           25522
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:sr4_3\/clock_0                             macrocell5    7136  20073  RISE       1
+
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+\TIA_1:sr4_3\/q       macrocell5    1250  21323  -1229  RISE       1
+\TIA_1:sr4_3\/main_1  macrocell5    4198  25522  -1229  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr4_3\/clock_0                             macrocell5    7136  17802  RISE       1
+
+
+
+++++ Path 20 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_3\/q
+Path End       : \TIA_1:dvdr_4\/main_3
+Capture Clock  : \TIA_1:dvdr_4\/clock_0
+Path slack     : -1009p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       19685
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26175
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      21956
++ Data path delay                        5228
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           27184
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  21956  RISE       1
+
+Data path
+pin name               model name   delay     AT   slack  edge  Fanout
+---------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_3\/q       macrocell15   1250  23206  -20796  RISE       1
+\TIA_1:dvdr_4\/main_3  macrocell14   3978  27184   -1009  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_4\/clock_0                            macrocell14   9019  19685  RISE       1
+
+
+
+++++ Path 21 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_3\/q
+Path End       : \TIA_1:dvdr_3\/main_2
+Capture Clock  : \TIA_1:dvdr_3\/clock_0
+Path slack     : -1009p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       19685
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26175
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      21956
++ Data path delay                        5228
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           27184
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  21956  RISE       1
+
+Data path
+pin name               model name   delay     AT   slack  edge  Fanout
+---------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_3\/q       macrocell15   1250  23206  -20796  RISE       1
+\TIA_1:dvdr_3\/main_2  macrocell15   3978  27184   -1009  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  19685  RISE       1
+
+
+
+++++ Path 22 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : Pin_8(0)_PAD
+Path End       : \TIA_1:sr4_3\/main_0
+Capture Clock  : \TIA_1:sr4_3\/clock_0
+Path slack     : -918p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17802
++ Cycle adjust (Pin_8(0)_PAD:F#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24292
+
+Launch Clock Arrival Time                    5000
++ Clock path delay                          0
++ Data path delay                       20211
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           25211
+ 
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+Pin_8(0)_PAD          TIA              0   5000   COMP  FALL       1
+Pin_8(0)/pad_in       iocell7          0   5000   COMP  FALL       1
+Pin_8(0)/fb           iocell7      12937  17937   COMP  FALL       1
+\TIA_1:sr4_3\/main_0  macrocell5    7274  25211   -918  FALL       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr4_3\/clock_0                             macrocell5    7136  17802  RISE       1
+
+
+
+++++ Path 23 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : Pin_8(0)_PAD
+Path End       : \TIA_1:dvdr_4\/main_0
+Capture Clock  : \TIA_1:dvdr_4\/clock_0
+Path slack     : -822p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       19685
++ Cycle adjust (Pin_8(0)_PAD:F#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26175
+
+Launch Clock Arrival Time                    5000
++ Clock path delay                          0
++ Data path delay                       21997
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           26997
+ 
+Data path
+pin name               model name   delay     AT  slack  edge  Fanout
+---------------------  -----------  -----  -----  -----  ----  ------
+Pin_8(0)_PAD           TIA              0   5000   COMP  FALL       1
+Pin_8(0)/pad_in        iocell7          0   5000   COMP  FALL       1
+Pin_8(0)/fb            iocell7      12937  17937   COMP  FALL       1
+\TIA_1:dvdr_4\/main_0  macrocell14   9060  26997   -822  FALL       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_4\/clock_0                            macrocell14   9019  19685  RISE       1
+
+
+
+++++ Path 24 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : Pin_8(0)_PAD
+Path End       : \TIA_1:dvdr_3\/main_0
+Capture Clock  : \TIA_1:dvdr_3\/clock_0
+Path slack     : -822p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       19685
++ Cycle adjust (Pin_8(0)_PAD:F#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26175
+
+Launch Clock Arrival Time                    5000
++ Clock path delay                          0
++ Data path delay                       21997
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           26997
+ 
+Data path
+pin name               model name   delay     AT  slack  edge  Fanout
+---------------------  -----------  -----  -----  -----  ----  ------
+Pin_8(0)_PAD           TIA              0   5000   COMP  FALL       1
+Pin_8(0)/pad_in        iocell7          0   5000   COMP  FALL       1
+Pin_8(0)/fb            iocell7      12937  17937   COMP  FALL       1
+\TIA_1:dvdr_3\/main_0  macrocell15   9060  26997   -822  FALL       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  19685  RISE       1
+
+
+
+++++ Path 25 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : Net_41/q
+Path End       : Net_41/main_3
+Capture Clock  : Net_41/clock_0
+Path slack     : -781p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20231
++ Data path delay                        5000
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           25231
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+Net_41/clock_0                                    macrocell8    7294  20231  RISE       1
+
+Data path
+pin name       model name   delay     AT  slack  edge  Fanout
+-------------  -----------  -----  -----  -----  ----  ------
+Net_41/q       macrocell8    1250  21481  -4881  RISE       1
+Net_41/main_3  macrocell8    3750  25231   -781  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+Net_41/clock_0                                    macrocell8    7294  17960  RISE       1
+
+
+
+++++ Path 26 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : Pin_8(0)_PAD
+Path End       : \TIA_1:sr4_2\/main_0
+Capture Clock  : \TIA_1:sr4_2\/clock_0
+Path slack     : -757p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:F#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                    5000
++ Clock path delay                          0
++ Data path delay                       20207
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           25207
+ 
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+Pin_8(0)_PAD          TIA              0   5000   COMP  FALL       1
+Pin_8(0)/pad_in       iocell7          0   5000   COMP  FALL       1
+Pin_8(0)/fb           iocell7      12937  17937   COMP  FALL       1
+\TIA_1:sr4_2\/main_0  macrocell6    7270  25207   -757  FALL       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr4_2\/clock_0                             macrocell6    7294  17960  RISE       1
+
+
+
+++++ Path 27 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : Pin_8(0)_PAD
+Path End       : \TIA_1:sr4_1\/main_0
+Capture Clock  : \TIA_1:sr4_1\/clock_0
+Path slack     : -757p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:F#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                    5000
++ Clock path delay                          0
++ Data path delay                       20207
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           25207
+ 
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+Pin_8(0)_PAD          TIA              0   5000   COMP  FALL       1
+Pin_8(0)/pad_in       iocell7          0   5000   COMP  FALL       1
+Pin_8(0)/fb           iocell7      12937  17937   COMP  FALL       1
+\TIA_1:sr4_1\/main_0  macrocell7    7270  25207   -757  FALL       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr4_1\/clock_0                             macrocell7    7294  17960  RISE       1
+
+
+
+++++ Path 28 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : Pin_8(0)_PAD
+Path End       : Net_41/main_0
+Capture Clock  : Net_41/clock_0
+Path slack     : -757p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:F#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                    5000
++ Clock path delay                          0
++ Data path delay                       20207
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           25207
+ 
+Data path
+pin name         model name   delay     AT  slack  edge  Fanout
+---------------  -----------  -----  -----  -----  ----  ------
+Pin_8(0)_PAD     TIA              0   5000   COMP  FALL       1
+Pin_8(0)/pad_in  iocell7          0   5000   COMP  FALL       1
+Pin_8(0)/fb      iocell7      12937  17937   COMP  FALL       1
+Net_41/main_0    macrocell8    7270  25207   -757  FALL       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+Net_41/clock_0                                    macrocell8    7294  17960  RISE       1
+
+
+
+++++ Path 29 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:sr4_3\/q
+Path End       : \TIA_1:sr4_2\/main_1
+Capture Clock  : \TIA_1:sr4_2\/clock_0
+Path slack     : -519p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20073
++ Data path delay                        4895
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           24969
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:sr4_3\/clock_0                             macrocell5    7136  20073  RISE       1
+
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+\TIA_1:sr4_3\/q       macrocell5    1250  21323  -1229  RISE       1
+\TIA_1:sr4_2\/main_1  macrocell6    3645  24969   -519  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr4_2\/clock_0                             macrocell6    7294  17960  RISE       1
+
+
+
+++++ Path 30 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : Pin_8(0)_PAD
+Path End       : \TIA_1:sr5_3\/main_0
+Capture Clock  : \TIA_1:sr5_3\/clock_0
+Path slack     : -423p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       20087
++ Cycle adjust (Pin_8(0)_PAD:F#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26577
+
+Launch Clock Arrival Time                    5000
++ Clock path delay                          0
++ Data path delay                       22000
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           27000
+ 
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+Pin_8(0)_PAD          TIA              0   5000   COMP  FALL       1
+Pin_8(0)/pad_in       iocell7          0   5000   COMP  FALL       1
+Pin_8(0)/fb           iocell7      12937  17937   COMP  FALL       1
+\TIA_1:sr5_3\/main_0  macrocell10   9063  27000   -423  FALL       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr5_3\/clock_0                             macrocell10   9421  20087  RISE       1
+
+
+
+++++ Path 31 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : Pin_8(0)_PAD
+Path End       : \TIA_1:sr5_2\/main_0
+Capture Clock  : \TIA_1:sr5_2\/clock_0
+Path slack     : -423p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       20087
++ Cycle adjust (Pin_8(0)_PAD:F#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26577
+
+Launch Clock Arrival Time                    5000
++ Clock path delay                          0
++ Data path delay                       22000
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           27000
+ 
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+Pin_8(0)_PAD          TIA              0   5000   COMP  FALL       1
+Pin_8(0)/pad_in       iocell7          0   5000   COMP  FALL       1
+Pin_8(0)/fb           iocell7      12937  17937   COMP  FALL       1
+\TIA_1:sr5_2\/main_0  macrocell11   9063  27000   -423  FALL       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr5_2\/clock_0                             macrocell11   9421  20087  RISE       1
+
+
+
+++++ Path 32 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : Pin_8(0)_PAD
+Path End       : \TIA_1:sr5_1\/main_0
+Capture Clock  : \TIA_1:sr5_1\/clock_0
+Path slack     : -423p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       20087
++ Cycle adjust (Pin_8(0)_PAD:F#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26577
+
+Launch Clock Arrival Time                    5000
++ Clock path delay                          0
++ Data path delay                       22000
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           27000
+ 
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+Pin_8(0)_PAD          TIA              0   5000   COMP  FALL       1
+Pin_8(0)/pad_in       iocell7          0   5000   COMP  FALL       1
+Pin_8(0)/fb           iocell7      12937  17937   COMP  FALL       1
+\TIA_1:sr5_1\/main_0  macrocell12   9063  27000   -423  FALL       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr5_1\/clock_0                             macrocell12   9421  20087  RISE       1
+
+
+
+++++ Path 33 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : Pin_8(0)_PAD
+Path End       : \TIA_1:sr5_0\/main_0
+Capture Clock  : \TIA_1:sr5_0\/clock_0
+Path slack     : -406p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:F#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                    5000
++ Clock path delay                          0
++ Data path delay                       19856
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           24856
+ 
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+Pin_8(0)_PAD          TIA              0   5000   COMP  FALL       1
+Pin_8(0)/pad_in       iocell7          0   5000   COMP  FALL       1
+Pin_8(0)/fb           iocell7      12937  17937   COMP  FALL       1
+\TIA_1:sr5_0\/main_0  macrocell13   6919  24856   -406  FALL       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr5_0\/clock_0                             macrocell13   7294  17960  RISE       1
+
+
+
+++++ Path 34 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : Pin_8(0)_PAD
+Path End       : \TIA_1:dvdr_2\/main_0
+Capture Clock  : \TIA_1:dvdr_2\/clock_0
+Path slack     : -406p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:F#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                    5000
++ Clock path delay                          0
++ Data path delay                       19856
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           24856
+ 
+Data path
+pin name               model name   delay     AT  slack  edge  Fanout
+---------------------  -----------  -----  -----  -----  ----  ------
+Pin_8(0)_PAD           TIA              0   5000   COMP  FALL       1
+Pin_8(0)/pad_in        iocell7          0   5000   COMP  FALL       1
+Pin_8(0)/fb            iocell7      12937  17937   COMP  FALL       1
+\TIA_1:dvdr_2\/main_0  macrocell16   6919  24856   -406  FALL       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_2\/clock_0                            macrocell16   7294  17960  RISE       1
+
+
+
+++++ Path 35 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : Pin_8(0)_PAD
+Path End       : \TIA_1:dvdr_1\/main_0
+Capture Clock  : \TIA_1:dvdr_1\/clock_0
+Path slack     : -406p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:F#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                    5000
++ Clock path delay                          0
++ Data path delay                       19856
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           24856
+ 
+Data path
+pin name               model name   delay     AT  slack  edge  Fanout
+---------------------  -----------  -----  -----  -----  ----  ------
+Pin_8(0)_PAD           TIA              0   5000   COMP  FALL       1
+Pin_8(0)/pad_in        iocell7          0   5000   COMP  FALL       1
+Pin_8(0)/fb            iocell7      12937  17937   COMP  FALL       1
+\TIA_1:dvdr_1\/main_0  macrocell17   6919  24856   -406  FALL       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_1\/clock_0                            macrocell17   7294  17960  RISE       1
+
+
+
+++++ Path 36 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : Pin_8(0)_PAD
+Path End       : \TIA_1:dvdr_0\/main_0
+Capture Clock  : \TIA_1:dvdr_0\/clock_0
+Path slack     : -406p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:F#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                    5000
++ Clock path delay                          0
++ Data path delay                       19856
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           24856
+ 
+Data path
+pin name               model name   delay     AT  slack  edge  Fanout
+---------------------  -----------  -----  -----  -----  ----  ------
+Pin_8(0)_PAD           TIA              0   5000   COMP  FALL       1
+Pin_8(0)/pad_in        iocell7          0   5000   COMP  FALL       1
+Pin_8(0)/fb            iocell7      12937  17937   COMP  FALL       1
+\TIA_1:dvdr_0\/main_0  macrocell18   6919  24856   -406  FALL       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_0\/clock_0                            macrocell18   7294  17960  RISE       1
+
+
+
+++++ Path 37 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:sr5_0\/q
+Path End       : \TIA_1:sr4_3\/main_5
+Capture Clock  : \TIA_1:sr4_3\/clock_0
+Path slack     : -252p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17802
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24292
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20231
++ Data path delay                        4313
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           24544
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:sr5_0\/clock_0                             macrocell13   7294  20231  RISE       1
+
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+\TIA_1:sr5_0\/q       macrocell13   1250  21481  -7384  RISE       1
+\TIA_1:sr4_3\/main_5  macrocell5    3063  24544   -252  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr4_3\/clock_0                             macrocell5    7136  17802  RISE       1
+
+
+
+++++ Path 38 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:sr4_1\/q
+Path End       : \TIA_1:sr4_3\/main_4
+Capture Clock  : \TIA_1:sr4_3\/clock_0
+Path slack     : 19p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17802
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24292
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20231
++ Data path delay                        4043
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           24273
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:sr4_1\/clock_0                             macrocell7    7294  20231  RISE       1
+
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+\TIA_1:sr4_1\/q       macrocell7    1250  21481     19  RISE       1
+\TIA_1:sr4_3\/main_4  macrocell5    2793  24273     19  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr4_3\/clock_0                             macrocell5    7136  17802  RISE       1
+
+
+
+++++ Path 39 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:sr5_0\/q
+Path End       : \TIA_1:sr5_0\/main_3
+Capture Clock  : \TIA_1:sr5_0\/clock_0
+Path slack     : 34p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20231
++ Data path delay                        4185
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           24416
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:sr5_0\/clock_0                             macrocell13   7294  20231  RISE       1
+
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+\TIA_1:sr5_0\/q       macrocell13   1250  21481  -7384  RISE       1
+\TIA_1:sr5_0\/main_3  macrocell13   2935  24416     34  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr5_0\/clock_0                             macrocell13   7294  17960  RISE       1
+
+
+
+++++ Path 40 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:sr5_3\/q
+Path End       : \TIA_1:sr5_3\/main_3
+Capture Clock  : \TIA_1:sr5_3\/clock_0
+Path slack     : 136p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       20087
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26577
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      22358
++ Data path delay                        4083
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           26440
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:sr5_3\/clock_0                             macrocell10   9421  22358  RISE       1
+
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+\TIA_1:sr5_3\/q       macrocell10   1250  23608  -8517  RISE       1
+\TIA_1:sr5_3\/main_3  macrocell10   2833  26440    136  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr5_3\/clock_0                             macrocell10   9421  20087  RISE       1
+
+
+
+++++ Path 41 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:sr5_3\/q
+Path End       : \TIA_1:sr5_2\/main_2
+Capture Clock  : \TIA_1:sr5_2\/clock_0
+Path slack     : 136p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       20087
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26577
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      22358
++ Data path delay                        4083
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           26440
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:sr5_3\/clock_0                             macrocell10   9421  22358  RISE       1
+
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+\TIA_1:sr5_3\/q       macrocell10   1250  23608  -8517  RISE       1
+\TIA_1:sr5_2\/main_2  macrocell11   2833  26440    136  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr5_2\/clock_0                             macrocell11   9421  20087  RISE       1
+
+
+
+++++ Path 42 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:sr5_3\/q
+Path End       : \TIA_1:sr5_4\/main_3
+Capture Clock  : \TIA_1:sr5_4\/clock_0
+Path slack     : 137p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       20087
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26577
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      22358
++ Data path delay                        4082
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           26440
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:sr5_3\/clock_0                             macrocell10   9421  22358  RISE       1
+
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+\TIA_1:sr5_3\/q       macrocell10   1250  23608  -8517  RISE       1
+\TIA_1:sr5_4\/main_3  macrocell9    2832  26440    137  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr5_4\/clock_0                             macrocell9    9421  20087  RISE       1
+
+
+
+++++ Path 43 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:sr4_1\/q
+Path End       : \TIA_1:sr4_1\/main_3
+Capture Clock  : \TIA_1:sr4_1\/clock_0
+Path slack     : 184p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20231
++ Data path delay                        4035
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           24266
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:sr4_1\/clock_0                             macrocell7    7294  20231  RISE       1
+
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+\TIA_1:sr4_1\/q       macrocell7    1250  21481     19  RISE       1
+\TIA_1:sr4_1\/main_3  macrocell7    2785  24266    184  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr4_1\/clock_0                             macrocell7    7294  17960  RISE       1
+
+
+
+++++ Path 44 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:sr4_1\/q
+Path End       : Net_41/main_2
+Capture Clock  : Net_41/clock_0
+Path slack     : 184p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20231
++ Data path delay                        4035
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           24266
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:sr4_1\/clock_0                             macrocell7    7294  20231  RISE       1
+
+Data path
+pin name         model name   delay     AT  slack  edge  Fanout
+---------------  -----------  -----  -----  -----  ----  ------
+\TIA_1:sr4_1\/q  macrocell7    1250  21481     19  RISE       1
+Net_41/main_2    macrocell8    2785  24266    184  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+Net_41/clock_0                                    macrocell8    7294  17960  RISE       1
+
+
+
+++++ Path 45 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:sr4_2\/q
+Path End       : \TIA_1:sr4_3\/main_3
+Capture Clock  : \TIA_1:sr4_3\/clock_0
+Path slack     : 230p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17802
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24292
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20231
++ Data path delay                        3832
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           24063
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:sr4_2\/clock_0                             macrocell6    7294  20231  RISE       1
+
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+\TIA_1:sr4_2\/q       macrocell6    1250  21481    230  RISE       1
+\TIA_1:sr4_3\/main_3  macrocell5    2582  24063    230  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr4_3\/clock_0                             macrocell5    7136  17802  RISE       1
+
+
+
+++++ Path 46 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_4\/q
+Path End       : \TIA_1:dvdr_4\/main_2
+Capture Clock  : \TIA_1:dvdr_4\/clock_0
+Path slack     : 263p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       19685
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26175
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      21956
++ Data path delay                        3956
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           25912
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_4\/clock_0                            macrocell14   9019  21956  RISE       1
+
+Data path
+pin name               model name   delay     AT   slack  edge  Fanout
+---------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_4\/q       macrocell14   1250  23206  -20044  RISE       1
+\TIA_1:dvdr_4\/main_2  macrocell14   2706  25912     263  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_4\/clock_0                            macrocell14   9019  19685  RISE       1
+
+
+
+++++ Path 47 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:sr5_2\/q
+Path End       : \TIA_1:sr5_2\/main_3
+Capture Clock  : \TIA_1:sr5_2\/clock_0
+Path slack     : 268p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       20087
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26577
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      22358
++ Data path delay                        3951
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           26309
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:sr5_2\/clock_0                             macrocell11   9421  22358  RISE       1
+
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+\TIA_1:sr5_2\/q       macrocell11   1250  23608  -8401  RISE       1
+\TIA_1:sr5_2\/main_3  macrocell11   2701  26309    268  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr5_2\/clock_0                             macrocell11   9421  20087  RISE       1
+
+
+
+++++ Path 48 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:sr5_2\/q
+Path End       : \TIA_1:sr5_1\/main_2
+Capture Clock  : \TIA_1:sr5_1\/clock_0
+Path slack     : 268p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       20087
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26577
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      22358
++ Data path delay                        3951
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           26309
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:sr5_2\/clock_0                             macrocell11   9421  22358  RISE       1
+
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+\TIA_1:sr5_2\/q       macrocell11   1250  23608  -8401  RISE       1
+\TIA_1:sr5_1\/main_2  macrocell12   2701  26309    268  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr5_1\/clock_0                             macrocell12   9421  20087  RISE       1
+
+
+
+++++ Path 49 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:sr5_1\/q
+Path End       : \TIA_1:sr5_1\/main_3
+Capture Clock  : \TIA_1:sr5_1\/clock_0
+Path slack     : 292p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       20087
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26577
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      22358
++ Data path delay                        3927
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           26285
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:sr5_1\/clock_0                             macrocell12   9421  22358  RISE       1
+
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+\TIA_1:sr5_1\/q       macrocell12   1250  23608  -8378  RISE       1
+\TIA_1:sr5_1\/main_3  macrocell12   2677  26285    292  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr5_1\/clock_0                             macrocell12   9421  20087  RISE       1
+
+
+
+++++ Path 50 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_0\/q
+Path End       : \TIA_1:dvdr_2\/main_4
+Capture Clock  : \TIA_1:dvdr_2\/clock_0
+Path slack     : 333p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20231
++ Data path delay                        3886
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           24117
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_0\/clock_0                            macrocell18   7294  20231  RISE       1
+
+Data path
+pin name               model name   delay     AT   slack  edge  Fanout
+---------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_0\/q       macrocell18   1250  21481  -19168  RISE       1
+\TIA_1:dvdr_2\/main_4  macrocell16   2636  24117     333  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_2\/clock_0                            macrocell16   7294  17960  RISE       1
+
+
+
+++++ Path 51 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_0\/q
+Path End       : \TIA_1:dvdr_1\/main_3
+Capture Clock  : \TIA_1:dvdr_1\/clock_0
+Path slack     : 333p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20231
++ Data path delay                        3886
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           24117
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_0\/clock_0                            macrocell18   7294  20231  RISE       1
+
+Data path
+pin name               model name   delay     AT   slack  edge  Fanout
+---------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_0\/q       macrocell18   1250  21481  -19168  RISE       1
+\TIA_1:dvdr_1\/main_3  macrocell17   2636  24117     333  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_1\/clock_0                            macrocell17   7294  17960  RISE       1
+
+
+
+++++ Path 52 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_0\/q
+Path End       : \TIA_1:dvdr_0\/main_2
+Capture Clock  : \TIA_1:dvdr_0\/clock_0
+Path slack     : 333p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20231
++ Data path delay                        3886
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           24117
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_0\/clock_0                            macrocell18   7294  20231  RISE       1
+
+Data path
+pin name               model name   delay     AT   slack  edge  Fanout
+---------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_0\/q       macrocell18   1250  21481  -19168  RISE       1
+\TIA_1:dvdr_0\/main_2  macrocell18   2636  24117     333  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_0\/clock_0                            macrocell18   7294  17960  RISE       1
+
+
+
+++++ Path 53 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_2\/q
+Path End       : \TIA_1:dvdr_2\/main_2
+Capture Clock  : \TIA_1:dvdr_2\/clock_0
+Path slack     : 349p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20231
++ Data path delay                        3870
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           24101
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_2\/clock_0                            macrocell16   7294  20231  RISE       1
+
+Data path
+pin name               model name   delay     AT   slack  edge  Fanout
+---------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_2\/q       macrocell16   1250  21481  -19181  RISE       1
+\TIA_1:dvdr_2\/main_2  macrocell16   2620  24101     349  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_2\/clock_0                            macrocell16   7294  17960  RISE       1
+
+
+
+++++ Path 54 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:sr4_2\/q
+Path End       : \TIA_1:sr4_2\/main_3
+Capture Clock  : \TIA_1:sr4_2\/clock_0
+Path slack     : 391p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20231
++ Data path delay                        3828
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           24059
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:sr4_2\/clock_0                             macrocell6    7294  20231  RISE       1
+
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+\TIA_1:sr4_2\/q       macrocell6    1250  21481    230  RISE       1
+\TIA_1:sr4_2\/main_3  macrocell6    2578  24059    391  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr4_2\/clock_0                             macrocell6    7294  17960  RISE       1
+
+
+
+++++ Path 55 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:sr4_2\/q
+Path End       : \TIA_1:sr4_1\/main_2
+Capture Clock  : \TIA_1:sr4_1\/clock_0
+Path slack     : 391p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20231
++ Data path delay                        3828
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           24059
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:sr4_2\/clock_0                             macrocell6    7294  20231  RISE       1
+
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+\TIA_1:sr4_2\/q       macrocell6    1250  21481    230  RISE       1
+\TIA_1:sr4_1\/main_2  macrocell7    2578  24059    391  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr4_1\/clock_0                             macrocell7    7294  17960  RISE       1
+
+
+
+++++ Path 56 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:sr5_4\/q
+Path End       : \TIA_1:sr5_3\/main_1
+Capture Clock  : \TIA_1:sr5_3\/clock_0
+Path slack     : 435p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       20087
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26577
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      22358
++ Data path delay                        3784
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           26142
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:sr5_4\/clock_0                             macrocell9    9421  22358  RISE       1
+
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+\TIA_1:sr5_4\/q       macrocell9    1250  23608  -8217  RISE       1
+\TIA_1:sr5_3\/main_1  macrocell10   2534  26142    435  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr5_3\/clock_0                             macrocell10   9421  20087  RISE       1
+
+
+
+++++ Path 57 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:sr5_4\/q
+Path End       : \TIA_1:sr5_4\/main_1
+Capture Clock  : \TIA_1:sr5_4\/clock_0
+Path slack     : 438p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       20087
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26577
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      22358
++ Data path delay                        3781
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           26139
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:sr5_4\/clock_0                             macrocell9    9421  22358  RISE       1
+
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+\TIA_1:sr5_4\/q       macrocell9    1250  23608  -8217  RISE       1
+\TIA_1:sr5_4\/main_1  macrocell9    2531  26139    438  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr5_4\/clock_0                             macrocell9    9421  20087  RISE       1
+
+
+
+++++ Path 58 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_1\/q
+Path End       : \TIA_1:dvdr_2\/main_3
+Capture Clock  : \TIA_1:dvdr_2\/clock_0
+Path slack     : 663p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20231
++ Data path delay                        3556
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           23787
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_1\/clock_0                            macrocell17   7294  20231  RISE       1
+
+Data path
+pin name               model name   delay     AT   slack  edge  Fanout
+---------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_1\/q       macrocell17   1250  21481  -18996  RISE       1
+\TIA_1:dvdr_2\/main_3  macrocell16   2306  23787     663  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_2\/clock_0                            macrocell16   7294  17960  RISE       1
+
+
+
+++++ Path 59 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_1\/q
+Path End       : \TIA_1:dvdr_1\/main_2
+Capture Clock  : \TIA_1:dvdr_1\/clock_0
+Path slack     : 663p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       17960
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           24450
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20231
++ Data path delay                        3556
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           23787
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_1\/clock_0                            macrocell17   7294  20231  RISE       1
+
+Data path
+pin name               model name   delay     AT   slack  edge  Fanout
+---------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_1\/q       macrocell17   1250  21481  -18996  RISE       1
+\TIA_1:dvdr_1\/main_2  macrocell17   2306  23787     663  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_1\/clock_0                            macrocell17   7294  17960  RISE       1
+
+
+
+++++ Path 60 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_2\/q
+Path End       : \TIA_1:dvdr_4\/main_4
+Capture Clock  : \TIA_1:dvdr_4\/clock_0
+Path slack     : 1150p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       19685
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26175
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20231
++ Data path delay                        4794
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           25025
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_2\/clock_0                            macrocell16   7294  20231  RISE       1
+
+Data path
+pin name               model name   delay     AT   slack  edge  Fanout
+---------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_2\/q       macrocell16   1250  21481  -19181  RISE       1
+\TIA_1:dvdr_4\/main_4  macrocell14   3544  25025    1150  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_4\/clock_0                            macrocell14   9019  19685  RISE       1
+
+
+
+++++ Path 61 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_2\/q
+Path End       : \TIA_1:dvdr_3\/main_3
+Capture Clock  : \TIA_1:dvdr_3\/clock_0
+Path slack     : 1150p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       19685
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26175
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20231
++ Data path delay                        4794
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           25025
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_2\/clock_0                            macrocell16   7294  20231  RISE       1
+
+Data path
+pin name               model name   delay     AT   slack  edge  Fanout
+---------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_2\/q       macrocell16   1250  21481  -19181  RISE       1
+\TIA_1:dvdr_3\/main_3  macrocell15   3544  25025    1150  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  19685  RISE       1
+
+
+
+++++ Path 62 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_0\/q
+Path End       : \TIA_1:dvdr_4\/main_6
+Capture Clock  : \TIA_1:dvdr_4\/clock_0
+Path slack     : 1163p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       19685
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26175
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20231
++ Data path delay                        4781
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           25012
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_0\/clock_0                            macrocell18   7294  20231  RISE       1
+
+Data path
+pin name               model name   delay     AT   slack  edge  Fanout
+---------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_0\/q       macrocell18   1250  21481  -19168  RISE       1
+\TIA_1:dvdr_4\/main_6  macrocell14   3531  25012    1163  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_4\/clock_0                            macrocell14   9019  19685  RISE       1
+
+
+
+++++ Path 63 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_0\/q
+Path End       : \TIA_1:dvdr_3\/main_5
+Capture Clock  : \TIA_1:dvdr_3\/clock_0
+Path slack     : 1163p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       19685
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26175
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20231
++ Data path delay                        4781
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           25012
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_0\/clock_0                            macrocell18   7294  20231  RISE       1
+
+Data path
+pin name               model name   delay     AT   slack  edge  Fanout
+---------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_0\/q       macrocell18   1250  21481  -19168  RISE       1
+\TIA_1:dvdr_3\/main_5  macrocell15   3531  25012    1163  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  19685  RISE       1
+
+
+
+++++ Path 64 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:sr5_0\/q
+Path End       : \TIA_1:sr5_4\/main_4
+Capture Clock  : \TIA_1:sr5_4\/clock_0
+Path slack     : 1271p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       20087
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26577
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20231
++ Data path delay                        5075
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           25306
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:sr5_0\/clock_0                             macrocell13   7294  20231  RISE       1
+
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+\TIA_1:sr5_0\/q       macrocell13   1250  21481  -7384  RISE       1
+\TIA_1:sr5_4\/main_4  macrocell9    3825  25306   1271  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr5_4\/clock_0                             macrocell9    9421  20087  RISE       1
+
+
+
+++++ Path 65 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_1\/q
+Path End       : \TIA_1:dvdr_4\/main_5
+Capture Clock  : \TIA_1:dvdr_4\/clock_0
+Path slack     : 1335p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       19685
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26175
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20231
++ Data path delay                        4609
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           24840
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_1\/clock_0                            macrocell17   7294  20231  RISE       1
+
+Data path
+pin name               model name   delay     AT   slack  edge  Fanout
+---------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_1\/q       macrocell17   1250  21481  -18996  RISE       1
+\TIA_1:dvdr_4\/main_5  macrocell14   3359  24840    1335  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_4\/clock_0                            macrocell14   9019  19685  RISE       1
+
+
+
+++++ Path 66 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \TIA_1:dvdr_1\/q
+Path End       : \TIA_1:dvdr_3\/main_4
+Capture Clock  : \TIA_1:dvdr_3\/clock_0
+Path slack     : 1335p
+
+Capture Clock Arrival Time                                   0
++ Clock path delay                                       19685
++ Cycle adjust (Pin_8(0)_PAD:R#1 vs. Pin_8(0)_PAD:R#2)   10000
+- Setup time                                             -3510
+------------------------------------------------------   ----- 
+End-of-path required time (ps)                           26175
+
+Launch Clock Arrival Time                       0
++ Clock path delay                      20231
++ Data path delay                        4609
+-------------------------------------   ----- 
+End-of-path arrival time (ps)           24840
+ 
+Launch Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      12937  12937  RISE       1
+\TIA_1:dvdr_1\/clock_0                            macrocell17   7294  20231  RISE       1
+
+Data path
+pin name               model name   delay     AT   slack  edge  Fanout
+---------------------  -----------  -----  -----  ------  ----  ------
+\TIA_1:dvdr_1\/q       macrocell17   1250  21481  -18996  RISE       1
+\TIA_1:dvdr_3\/main_4  macrocell15   3359  24840    1335  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:dvdr_3\/clock_0                            macrocell15   9019  19685  RISE       1
+
+
+
+++++ Path 67 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \AUDC:Sync:ctrl_reg\/control_0
+Path End       : \TIA_1:sr4_3\/main_9
+Capture Clock  : \TIA_1:sr4_3\/clock_0
+Path slack     : 10460p
+
+Capture Clock Arrival Time                               0
++ Clock path delay                                   17802
++ Cycle adjust (CyHFCLK:R#6 vs. Pin_8(0)_PAD:R#22)    1667
+- Setup time                                         -3510
+--------------------------------------------------   ----- 
+End-of-path required time (ps)                       15959
+
+Launch Clock Arrival Time                      0
++ Clock path delay                         0
++ Data path delay                       5499
+-------------------------------------   ---- 
+End-of-path arrival time (ps)           5499
+ 
+Launch Clock Path
+pin name                                              model name          delay     AT  edge  Fanout
+----------------------------------------------------  ------------------  -----  -----  ----  ------
+ClockBlock/hfclk                                      m0s8clockblockcell      0      0  RISE       1
+\AUDC:Sync:ctrl_reg\/busclk                           controlcell2            0      0  RISE       1
+
+Data path
+pin name                        model name    delay     AT  slack  edge  Fanout
+------------------------------  ------------  -----  -----  -----  ----  ------
+\AUDC:Sync:ctrl_reg\/control_0  controlcell2   2580   2580   3481  RISE       1
+\TIA_1:sr4_3\/main_9            macrocell5     2919   5499  10460  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr4_3\/clock_0                             macrocell5    7136  17802  RISE       1
+
+
+
+++++ Path 68 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \AUDC:Sync:ctrl_reg\/control_2
+Path End       : \TIA_1:sr4_3\/main_7
+Capture Clock  : \TIA_1:sr4_3\/clock_0
+Path slack     : 10590p
+
+Capture Clock Arrival Time                               0
++ Clock path delay                                   17802
++ Cycle adjust (CyHFCLK:R#6 vs. Pin_8(0)_PAD:R#22)    1667
+- Setup time                                         -3510
+--------------------------------------------------   ----- 
+End-of-path required time (ps)                       15959
+
+Launch Clock Arrival Time                      0
++ Clock path delay                         0
++ Data path delay                       5369
+-------------------------------------   ---- 
+End-of-path arrival time (ps)           5369
+ 
+Launch Clock Path
+pin name                                              model name          delay     AT  edge  Fanout
+----------------------------------------------------  ------------------  -----  -----  ----  ------
+ClockBlock/hfclk                                      m0s8clockblockcell      0      0  RISE       1
+\AUDC:Sync:ctrl_reg\/busclk                           controlcell2            0      0  RISE       1
+
+Data path
+pin name                        model name    delay     AT  slack  edge  Fanout
+------------------------------  ------------  -----  -----  -----  ----  ------
+\AUDC:Sync:ctrl_reg\/control_2  controlcell2   2580   2580   6636  RISE       1
+\TIA_1:sr4_3\/main_7            macrocell5     2789   5369  10590  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr4_3\/clock_0                             macrocell5    7136  17802  RISE       1
+
+
+
+++++ Path 69 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \AUDC:Sync:ctrl_reg\/control_3
+Path End       : \TIA_1:sr4_3\/main_6
+Capture Clock  : \TIA_1:sr4_3\/clock_0
+Path slack     : 10590p
+
+Capture Clock Arrival Time                               0
++ Clock path delay                                   17802
++ Cycle adjust (CyHFCLK:R#6 vs. Pin_8(0)_PAD:R#22)    1667
+- Setup time                                         -3510
+--------------------------------------------------   ----- 
+End-of-path required time (ps)                       15959
+
+Launch Clock Arrival Time                      0
++ Clock path delay                         0
++ Data path delay                       5369
+-------------------------------------   ---- 
+End-of-path arrival time (ps)           5369
+ 
+Launch Clock Path
+pin name                                              model name          delay     AT  edge  Fanout
+----------------------------------------------------  ------------------  -----  -----  ----  ------
+ClockBlock/hfclk                                      m0s8clockblockcell      0      0  RISE       1
+\AUDC:Sync:ctrl_reg\/busclk                           controlcell2            0      0  RISE       1
+
+Data path
+pin name                        model name    delay     AT  slack  edge  Fanout
+------------------------------  ------------  -----  -----  -----  ----  ------
+\AUDC:Sync:ctrl_reg\/control_3  controlcell2   2580   2580   6631  RISE       1
+\TIA_1:sr4_3\/main_6            macrocell5     2789   5369  10590  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr4_3\/clock_0                             macrocell5    7136  17802  RISE       1
+
+
+
+++++ Path 70 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \AUDC:Sync:ctrl_reg\/control_1
+Path End       : \TIA_1:sr4_3\/main_8
+Capture Clock  : \TIA_1:sr4_3\/clock_0
+Path slack     : 10766p
+
+Capture Clock Arrival Time                               0
++ Clock path delay                                   17802
++ Cycle adjust (CyHFCLK:R#6 vs. Pin_8(0)_PAD:R#22)    1667
+- Setup time                                         -3510
+--------------------------------------------------   ----- 
+End-of-path required time (ps)                       15959
+
+Launch Clock Arrival Time                      0
++ Clock path delay                         0
++ Data path delay                       5194
+-------------------------------------   ---- 
+End-of-path arrival time (ps)           5194
+ 
+Launch Clock Path
+pin name                                              model name          delay     AT  edge  Fanout
+----------------------------------------------------  ------------------  -----  -----  ----  ------
+ClockBlock/hfclk                                      m0s8clockblockcell      0      0  RISE       1
+\AUDC:Sync:ctrl_reg\/busclk                           controlcell2            0      0  RISE       1
+
+Data path
+pin name                        model name    delay     AT  slack  edge  Fanout
+------------------------------  ------------  -----  -----  -----  ----  ------
+\AUDC:Sync:ctrl_reg\/control_1  controlcell2   2580   2580   3496  RISE       1
+\TIA_1:sr4_3\/main_8            macrocell5     2614   5194  10766  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr4_3\/clock_0                             macrocell5    7136  17802  RISE       1
+
+
+
+++++ Path 71 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \AUDC:Sync:ctrl_reg\/control_1
+Path End       : \TIA_1:sr5_4\/main_5
+Capture Clock  : \TIA_1:sr5_4\/clock_0
+Path slack     : 12150p
+
+Capture Clock Arrival Time                               0
++ Clock path delay                                   20087
++ Cycle adjust (CyHFCLK:R#6 vs. Pin_8(0)_PAD:R#22)    1667
+- Setup time                                         -3510
+--------------------------------------------------   ----- 
+End-of-path required time (ps)                       18244
+
+Launch Clock Arrival Time                      0
++ Clock path delay                         0
++ Data path delay                       6093
+-------------------------------------   ---- 
+End-of-path arrival time (ps)           6093
+ 
+Launch Clock Path
+pin name                                              model name          delay     AT  edge  Fanout
+----------------------------------------------------  ------------------  -----  -----  ----  ------
+ClockBlock/hfclk                                      m0s8clockblockcell      0      0  RISE       1
+\AUDC:Sync:ctrl_reg\/busclk                           controlcell2            0      0  RISE       1
+
+Data path
+pin name                        model name    delay     AT  slack  edge  Fanout
+------------------------------  ------------  -----  -----  -----  ----  ------
+\AUDC:Sync:ctrl_reg\/control_1  controlcell2   2580   2580   3496  RISE       1
+\TIA_1:sr5_4\/main_5            macrocell9     3513   6093  12150  RISE       1
+
+Capture Clock Path
+pin name                                          model name   delay     AT  edge  Fanout
+------------------------------------------------  -----------  -----  -----  ----  ------
+Pin_8(0)_PAD                                      TIA              0      0  RISE       1
+Pin_8(0)/pad_in                                   iocell7          0      0  RISE       1
+Pin_8(0)/fb                                       iocell7      10666  10666  RISE       1
+\TIA_1:sr5_4\/clock_0                             macrocell9    9421  20087  RISE       1
+
+
+===================================================================== 
+                    End of Detailed Report for all timing paths 
+##################################################################### 
+
+##################################################################### 
+                    End of Timing Report 
+##################################################################### 
+
