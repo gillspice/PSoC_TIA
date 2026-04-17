@@ -3,6 +3,7 @@
   <Group key="Component">
     <Group key="v1">
       <Data key="cy_boot" value="cy_boot_v5_50" />
+      <Data key="cy_dmac" value="cy_dmac_v1_10" />
       <Data key="cy_lfclk" value="cy_lfclk_v1_10" />
       <Data key="LIN_Dynamic" value="LIN_Dynamic_v3_40" />
     </Group>
@@ -1284,5 +1285,6 @@
     <Data key="CYDEV_VARIABLE_VDDA" value="True" />
     <Data key="CYDEV_VDDA" value="3.3" />
     <Data key="CYDEV_VDDD" value="3.3" />
+    <Data key="CYDEV_VDDIO" value="3.3" />
   </Group>
 </DesignWideResources>

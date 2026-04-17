@@ -136,7 +136,7 @@
 #endif  /* CYDEV_CHIP_MEMBER_4P */
 
 
-#define CY_IP_HOBTO_DEVICE      (!(1 == 1))
+#define CY_IP_HOBTO_DEVICE      (!(0 == 1))
 
 
 /*******************************************************************************
@@ -155,8 +155,8 @@
 
     #if (CY_IP_HOBTO_DEVICE)
         #define CY_IP_CPUSSV3           (0 == 1)
-        #define CY_IP_CPUSSV2           (0 == 1)
-        #define CY_IP_CPUSS             (1 == 1)
+        #define CY_IP_CPUSSV2           (1 == 1)
+        #define CY_IP_CPUSS             (0 == 1)
     #else
         #define CY_IP_CPUSSV3           (0 != 0)
         #define CY_IP_CPUSSV2           (0 != 0)
@@ -188,10 +188,10 @@
     /* Product uses FLASH-Lite or regular FLASH */
     #if (CY_IP_HOBTO_DEVICE)
         #if (CY_IP_CPUSSV2)
-            #define CY_IP_FM                (-1 == 0)
-            #define CY_IP_FMLT              (-1 == 1)
-            #define CY_IP_FS                (-1 == 2)
-            #define CY_IP_FSLT              (-1 == 3)
+            #define CY_IP_FM                (1 == 0)
+            #define CY_IP_FMLT              (1 == 1)
+            #define CY_IP_FS                (1 == 2)
+            #define CY_IP_FSLT              (1 == 3)
         #else   /* CY_IP_CPUSSV3 */
             #define CY_IP_FM                (-1 == 0)
             #define CY_IP_FMLT              (-1 == 1)
@@ -221,7 +221,7 @@
     /* Number of Flash macros used in the device (0, 1 or 2) */
     #if (CY_IP_HOBTO_DEVICE)
         #if (CY_IP_CPUSSV2)
-            #define CY_IP_FLASH_MACROS (-1u)
+            #define CY_IP_FLASH_MACROS (2u)
         #else   /* CY_IP_CPUSSV3 */
             #define CY_IP_FLASH_MACROS (-1u)
         #endif  /* (CY_IP_CPUSSV2) */
@@ -232,7 +232,7 @@
     /* Number of interrupt request inputs to CM0 */
     #if (CY_IP_HOBTO_DEVICE)
         #if (CY_IP_CPUSSV2)
-            #define CY_IP_INT_NR            (-1u)
+            #define CY_IP_INT_NR            (32u)
         #else   /* CY_IP_CPUSSV3 */
             #define CY_IP_INT_NR            (-1u)
         #endif  /* (CY_IP_CPUSSV2) */
@@ -266,7 +266,7 @@
     ***************************************************************************/
     #if (CY_IP_HOBTO_DEVICE)
         #if (CY_IP_CPUSSV2)
-            #define CY_IP_SPCIF_SYNCHRONOUS     (-1 == 1)
+            #define CY_IP_SPCIF_SYNCHRONOUS     (0 == 1)
         #else   /* CY_IP_CPUSSV3 */
             #define CY_IP_SPCIF_SYNCHRONOUS     (-1 == 1)
         #endif  /* (CY_IP_CPUSSV2) */
@@ -288,9 +288,9 @@
             #endif
         #else
             #define CY_IP_WCO_BLESS         (0 != 0)
-            #define CY_IP_WCO_WCO           (0 == 1)
+            #define CY_IP_WCO_WCO           (1 == 1)
             #define CY_IP_WCO_WCOV2         (0 != 0)
-            #define CY_IP_WCO_SRSSV2        (-1 == 1)
+            #define CY_IP_WCO_SRSSV2        (0 == 1)
         #endif  /* (CY_IP_BLESS) */
     #else
         #define CY_IP_WCO_BLESS             (0 != 0)
@@ -304,11 +304,11 @@
 
     /* PLL is present */
      #if (CY_IP_HOBTO_DEVICE && CY_IP_SRSSV2)
-         #define CY_IP_PLL           ((-1 != 0) || \
-                                      (-1 != 0))
+         #define CY_IP_PLL           ((0 != 0) || \
+                                      (0 != 0))
 
-         #define CY_IP_PLL_NR         (-1u + \
-                                      -1u)
+         #define CY_IP_PLL_NR         (0u + \
+                                      0u)
      #else
          #define CY_IP_PLL           (0 != 0)
          #define CY_IP_PLL_NR        (0)
@@ -329,7 +329,7 @@
         #else
             #define CY_IP_ECO_BLESS         (0 != 0)
             #define CY_IP_ECO_BLESSV3       (0 != 0)
-            #define CY_IP_ECO_SRSSV2        (-1 == 1)
+            #define CY_IP_ECO_SRSSV2        (0 == 1)
         #endif  /* (CY_IP_BLESS) */
     #else
         #define CY_IP_ECO_BLESS             (0 != 0)
@@ -343,7 +343,7 @@
     /* Clock Source clk_lf implemented in SysTick Counter. When 0, not implemented, 1=implemented */
     #if (CY_IP_HOBTO_DEVICE)
         #if (CY_IP_CPUSSV2)
-            #define CY_SYSTICK_LFCLK_SOURCE     (-1 != 0)
+            #define CY_SYSTICK_LFCLK_SOURCE     (1 != 0)
         #else   /* CY_IP_CPUSSV3 */
             #define CY_SYSTICK_LFCLK_SOURCE     (-1 != 0)
         #endif  /* (CY_IP_CPUSSV2) */
@@ -382,7 +382,7 @@
     /* DW/DMA Controller present (0=No, 1=Yes) */
     #if (CY_IP_HOBTO_DEVICE)
         #if (CY_IP_CPUSSV2)
-            #define CY_IP_DMAC_PRESENT      (-1 == 1)
+            #define CY_IP_DMAC_PRESENT      (1 == 1)
         #else
             #define CY_IP_DMAC_PRESENT      (-1 == 1)
         #endif  /* (CY_IP_CPUSSV2) */
@@ -401,7 +401,7 @@
 	/* Number of external slave ports on System Interconnect */
     #if (CY_IP_HOBTO_DEVICE)
         #if (CY_IP_CPUSSV2)
-            #define CY_IP_SL_NR             (-1)
+            #define CY_IP_SL_NR             (3)
         #else
             #define CY_IP_SL_NR             (-1)
         #endif  /* (CY_IP_CPUSSV2) */

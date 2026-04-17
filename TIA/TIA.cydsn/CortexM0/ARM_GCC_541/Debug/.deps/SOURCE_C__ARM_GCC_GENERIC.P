@@ -1,0 +1,306 @@
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/ADC_SAR_Seq_1.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLib.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLFClk.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLib.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/ADC_SAR_Seq_1_INT.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1_INT.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLib.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h C:/github/PSoC_TIA/TIA/TIA.cydsn/cyapicallbacks.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1_INT.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/cyapicallbacks.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/ADC_SAR_Seq_1_IRQ.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1_IRQ.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1_IRQ.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLib.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h C:/github/PSoC_TIA/TIA/TIA.cydsn/cyapicallbacks.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1_IRQ.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1_IRQ.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/ADC_SAR_Seq_1_PM.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1_PM.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLib.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1_PM.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/ADC_SAR_Seq_1_intClock.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1_intClock.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1_intClock.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1_intClock.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1_intClock.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/AUDC.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/AUDC.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/AUDC.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/AUDC.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/AUDC.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/AUDC_PM.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/AUDC.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/AUDC_PM.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/AUDC_PM.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/AUDF.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/AUDF.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/AUDF.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/AUDF.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/AUDF.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/AUDF_PM.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/AUDF.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/AUDF_PM.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/AUDF_PM.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Clock_2.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Clock_2.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Clock_2.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Clock_2.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Clock_2.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Cm0Start.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Cm0Start.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLib.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h C:/github/PSoC_TIA/TIA/TIA.cydsn/cyapicallbacks.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Cm0Start.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Control_CV.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Control_CV.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Control_CV.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Control_CV_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Control_CV.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Control_CV.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Control_CV_aliases.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Control_CV_PM.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Control_CV.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Control_CV_PM.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Control_CV_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Control_CV_PM.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Control_Knob.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Control_Knob.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Control_Knob.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Control_Knob_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Control_Knob.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Control_Knob.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Control_Knob_aliases.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Control_Knob_PM.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Control_Knob.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Control_Knob_PM.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Control_Knob_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Control_Knob_PM.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/CyDMA.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyDMA.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyDMA.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLib.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyDMA.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyDMA.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/CyFlash.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyFlash.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyFlash.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLib.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyFlash.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyFlash.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/CyLFClk.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLFClk.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLib.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLFClk.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/CyLib.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyFlash.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLib.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLib.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLib.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Frequency_CV.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Frequency_CV.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Frequency_CV.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Frequency_CV_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Frequency_CV.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Frequency_CV.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Frequency_CV_aliases.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Frequency_CV_PM.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Frequency_CV.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Frequency_CV_PM.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Frequency_CV_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Frequency_CV_PM.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Frequency_Knob.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Frequency_Knob.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Frequency_Knob.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Frequency_Knob_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Frequency_Knob.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Frequency_Knob.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Frequency_Knob_aliases.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Frequency_Knob_PM.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Frequency_Knob.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Frequency_Knob_PM.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Frequency_Knob_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Frequency_Knob_PM.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Opamp_1.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Opamp_1.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Opamp_1.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Opamp_1.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Opamp_1.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Opamp_1_PM.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Opamp_1.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Opamp_1_PM.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Opamp_1_PM.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Opamp_2.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Opamp_2.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Opamp_2.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Opamp_2.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Opamp_2.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Opamp_2_PM.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Opamp_2.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Opamp_2_PM.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Opamp_2_PM.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_1.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_1.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_1.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_1_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_1.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_1.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_1_aliases.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_1_PM.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_1.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_1_PM.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_1_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_1_PM.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_2.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_2.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_2.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_2_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_2.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_2.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_2_aliases.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_2_PM.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_2.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_2_PM.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_2_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_2_PM.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_3.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_3.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_3.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_3_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_3.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_3.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_3_aliases.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_3_PM.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_3.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_3_PM.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_3_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_3_PM.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_4.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_4.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_4.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_4_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_4.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_4.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_4_aliases.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_4_PM.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_4.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_4_PM.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_4_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_4_PM.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_5.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_5.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_5.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_5_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_5.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_5.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_5_aliases.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_5_PM.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_5.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_5_PM.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_5_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_5_PM.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_6.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_6.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_6.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_6_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_6.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_6.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_6_aliases.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_6_PM.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_6.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_6_PM.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_6_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_6_PM.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_7.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_7.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_7.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_7_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_7.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_7.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_7_aliases.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_7_PM.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_7.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_7_PM.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_7_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_7_PM.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_8.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_8.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_8.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_8_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_8.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_8.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_8_aliases.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_8_PM.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_8.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_8_PM.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_8_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_8_PM.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_9.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_9.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_9.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_9_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_9.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_9.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_9_aliases.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_9_PM.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_9.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_9_PM.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_9_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_9_PM.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/cyPm.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLib.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyPm.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyPm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyPm.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyPm.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/cyfitter_cfg.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLib.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter_cfg.c C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h C:/github/PSoC_TIA/TIA/TIA.cydsn/cyapicallbacks.h 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter_cfg.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/cymetadata.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cymetadata.c 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cymetadata.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/cyutils.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyutils.c 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyutils.c : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/CortexM0/ARM_GCC_541/Debug/main.o : C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cmsis_armcc.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cmsis_gcc.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/core_cm0.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/core_cmFunc.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/core_cmInstr.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydisabledsheets.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/project.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1_IRQ.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/ADC_SAR_Seq_1_intClock.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/AUDC.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/AUDF.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Clock_2.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Control_CV.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Control_CV_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Control_Knob.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Control_Knob_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyDMA.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyFlash.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/CyLib.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Frequency_CV.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Frequency_CV_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Frequency_Knob.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Frequency_Knob_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Opamp_1.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Opamp_2.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_1.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_1_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_2.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_2_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_3.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_3_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_4.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_4_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_5.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_5_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_6.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_6_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_7.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_7_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_8.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_8_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_9.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/Pin_9_aliases.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyPm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cypins.h C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cytypes.h C:/github/PSoC_TIA/TIA/TIA.cydsn/main.c 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cmsis_armcc.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cmsis_gcc.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/core_cm0.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/core_cmFunc.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/core_cmInstr.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/cydisabledsheets.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/Generated_Source/PSoC4/project.h : 
+
+C:/github/PSoC_TIA/TIA/TIA.cydsn/main.c : 
+
